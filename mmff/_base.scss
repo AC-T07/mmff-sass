@@ -1,0 +1,39 @@
+// base
+
+// font import
+@import url('https://use.typekit.net/lpf4cax.css');
+
+// reset styles
+* {
+	color: inherit;
+	margin: 0;
+}
+
+body {
+	font-family: 'quicksand', sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+ul {
+	padding: 0;
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+hr {
+	border: 0;
+	border-top: 1px dotted #efefef;
+}
+
+img {
+	max-width: 100%;
+}
+
+body {
+  max-width: 90%;
+  margin-inline: auto;
+}
