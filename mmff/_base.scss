@@ -1,5 +1,3 @@
-// base
-
 // font import
 @import url('https://use.typekit.net/lpf4cax.css');
 
@@ -35,7 +33,10 @@ img {
 	max-width: 100%;
 }
 
+h1 {
+	text-wrap: balance;
+}
+
 body {
-  max-width: 80%;
-  margin-inline: auto;
+	margin-inline: auto;
 }
