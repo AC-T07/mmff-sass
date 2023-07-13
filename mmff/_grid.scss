@@ -12,7 +12,7 @@ $layout-values: flex-start, flex-end, center, space-between, space-around;
 // base layout classes
 .container {
 	width: 100%;
-	max-width: 1200px;
+	max-width: 90%;
 	margin: 0 auto;
 	padding: 0 20px;
 	box-sizing: border-box;
@@ -20,6 +20,12 @@ $layout-values: flex-start, flex-end, center, space-between, space-around;
 .row {
 	display: flex;
 	flex-flow: row wrap;
+}
+
+.space-between {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 // grid gaps
