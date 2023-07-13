@@ -1,897 +1,838 @@
-:root {
-    /* global colour set up */
-    font-size: 20px;
-    --primary-color: #484CA0;
-    --secondary-color: #F89B21;
-    --neutral-color: #F5FBFF;
-    --highlight-color: #3E3939;
-    --container-color: #5A5EAA;
-    --hover-effect: #d8e990;
-    /* Font Families */
-    --font-family: 'Booster Next FY', sans-serif; 
-    /* Other Variables */
-  }
+@import url(./global.css);
 
+:root {
+  /* global colour set up */
+  /* font-size: 20px; */
+  --primary-color: #484ca0;
+  --secondary-color: #f89b21;
+  --neutral-color: #f5fbff;
+  --highlight-color: #3e3939;
+  --container-color: #5a5eaa;
+  --hover-effect: #d8e990;
+  /* Font Families */
+  --font-family: "Booster Next FY", sans-serif;
+  /* Other Variables */
+}
 
 /* Global styles */
 body {
-    font-family: var(--font-family);
-    background-color: #fff;
+  /* font-family: var(--font-family); */
+  background-color: #fff;
+}
+/* 
+* {
+  padding: 0;
+  margin: 0;
+  border: 1px solid red;
 }
 
-/* *{
-    outline: 1px solid red !important;
-} */
-
 p {
-    font-family: 'Booster Next FY Light';
-    font-size: 0.7rem;
-    line-height: 1rem;
+  font-family: "Booster Next FY Light";
+  font-size: 0.7rem;
+  line-height: 1rem;
 }
 
 a {
-    color: var(--secondary-color);
-    text-decoration: none;
-    font-weight: 400;
-    font-size: 0.7rem;
-    line-height: 1rem;
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 0.7rem;
+  line-height: 1rem;
 }
 
-a:hover{
-    text-decoration: underline;
+a:hover {
+  text-decoration: underline;
 }
+html {
+  font-size: 62.5%;
+} */
 
 /* Navigation */
 
 .navigation {
-    margin: 0;
+  margin: 0;
 }
 
 .menu-button {
-    width: 100%;
-    padding: 1rem;
-    font-size: 1rem;
-    border: none;
-    background-color: rgb(0, 0, 0, 0.5);
-    color: white;
-    cursor: pointer;
-  }
-
-nav {
-    display: block;
-    position: relative;
-    background-color: rgba(23, 18, 18, 0.46);
-  }
-  .navigation-container {
-    width: 100%;
-    background-color: var(--primary-color);
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    transition: all 500ms ease-in-out;
-    align-items: center;
-    list-style-type: none;
-    z-index: 5;
-  }
-  
-  .navigation-container > * {
-    /* width: 100%; */
-    font-size: 0.4rem;
-    list-style-type: none;
-    padding-block: 0.75rem;
-    text-align: center;
-    /* background-color: var(--container-color); */
-  }
-  
-  .navigation-container a {
-    white-space: nowrap;
-    padding: 0.5rem;
-    font-weight: 500;
-    font-size: 0.9rem;
-    text-decoration: none;
-    color: white;
-    text-transform: uppercase;
-    transition: all 400ms ease-out;
-  }
-  
-  .navigation-container[data-expended="false"] {
-    transform: translateY(-150%);
-  }
-  .navigation-container[data-expended="true"] {
-    transform: translateY(0%);
-  }
-  
-  .navigation-container a:hover,
-  .navigation-container a:focus {
-    background-color: var(--hover-effect);
-    border-radius: 5rem;
-    color: black;
-  }
-
-/* Headings */
-
-h1 {
-    font-size: 2.4rem;
-    line-height: 2.4rem;
-    font-weight: 400;
-    color: var(--secondary-color);
-    text-align: center;
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  border: none;
+  background-color: rgb(0, 0, 0, 0.5);
+  color: white;
+  cursor: pointer;
 }
 
-h2 {
-    color: var(--secondary-color);
-    font-size: 1.8rem;
-    line-height: 1.8rem;
-    font-weight: 400;
-    text-align: center;
-    margin: 30px 15px 20px;
+/* ---------------------------------------- */
+
+/* ------------------------------------- */
+/* Headings */
+
+/* h1 {
+  font-size: 2.4rem;
+  line-height: 2.4rem;
+  font-weight: 400;
+  color: var(--secondary-color);
+  text-align: center;
+} */
+
+/* h2 {
+  color: var(--secondary-color);
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+  font-weight: 400;
+  text-align: center;
+  margin: 30px 15px 20px;
 }
 
 h3 {
-    color: var(--secondary-color);
-    font-size: 1.2rem;
-    line-height: 1.2rem;
-    text-align: center;
-    margin: 30px 15px 20px;
+  color: var(--secondary-color);
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  text-align: center;
+  margin: 30px 15px 20px;
 }
 
 h4 {
-    color: var(--secondary-color);
-    font-size: 1rem;
-    line-height: 1rem;
-    text-align: left;
-    margin: 15px 0 10px;
-}
+  color: var(--secondary-color);
+  font-size: 1rem;
+  line-height: 1rem;
+  text-align: left;
+  margin: 15px 0 10px;
+} */
 
 .heading-wrapper {
-    background-color: #484CA0;
-    padding: 4rem 0;
+  background-color: #484ca0;
 }
 
 .contact-htwo {
-    color: white;
-    font-size: 1.2rem;
-    line-height: 1.2rem;
-    font-weight: 400;
-    text-align: center;
-    margin: 0;
+  color: white;
+  font-size: var(--second-font-size);
+  line-height: 1.2rem;
+  font-weight: 400;
+  text-align: center;
+  margin: 0;
 }
 
 .tnp-htwo {
-    color: var(--primary-color);
-    font-size: 1.8rem;
-    font-weight: 400;
-    text-align: center;
-    margin: 0 0 20px 0;
+  color: var(--primary-color);
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-align: center;
+  margin: 0 0 20px 0;
 }
 
 .tnp-hthree {
-    color: var(--primary-color);
-    font-size: 1.4rem;
-    font-weight: 400;
-    text-align: center;
-    margin: 0;
+  color: var(--primary-color);
+  font-size: 1.4rem;
+  font-weight: 400;
+  text-align: center;
+  margin: 0;
 }
 
 /* Contact Page */
 
 .contact-section {
-    margin: 25px 0 30px 0;
-    padding: 25px 15px 50px 15px;
-    background-image: url('../assets/images/Final_16-9_NoTextB-Fullsize-RGB.jpg');
-    box-shadow: inset 0 0 0 1000px rgb(255, 255, 255, 0.8);
-    background-repeat: no-repeat;
-    background-position: top left;
-    background-size: cover;
+  margin: 25px 0 30px 0;
+  padding: 25px 15px 50px 15px;
+  background-image: url("../assets/images/Final_16-9_NoTextB-Fullsize-RGB.jpg");
+  box-shadow: inset 0 0 0 1000px rgb(255, 255, 255, 0.8);
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: cover;
 }
 
 .contact-wrapper {
-    background-color: #fff;
-    border-radius: 50px;
-    padding: 10px;
+  background-color: #fff;
+  border-radius: 50px;
+  padding: 10px;
 }
 
 .text-wrapper {
-    background-color: var(--highlight-color);
-    border-radius: 45px;
-    padding: 20px 25px 60px 25px;
+  background-color: var(--highlight-color);
+  border-radius: 45px;
+  padding: 20px 25px 60px 25px;
 }
 
 .text-wrapper p {
-    color: #fff;
-    line-height: 32px;
-    margin: 25px 0;
+  color: #fff;
+  /* line-height: 32px; */
+  margin: 25px 0;
 }
 
 .form-wrapper {
-    margin: 30px 25px 5px 25px;
+  margin: 30px 25px 5px 25px;
 }
 
 .contact-form {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .contact-form label {
-    font-size: 0.8rem;
-    font-family: 'Booster Next FY Medium';
-    line-height: 1.6rem;
+  font-size: 0.8rem;
+  font-family: "Booster Next FY Medium";
+  /* line-height: 1.6rem; */
 }
 
-.contact-form input, .contact-form textarea{
-    border-width: 0 0 1.5px 0;
-    font-family: 'Booster Next FY Medium';
-    outline: none;
-    width: 100%;
-    margin-bottom: 10px;
-    padding: 5px 0;
-
+.contact-form input,
+.contact-form textarea {
+  border-width: 0 0 1.5px 0;
+  font-family: "Booster Next FY Medium";
+  outline: none;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 5px 0;
 }
 
 .contact-form textarea {
-    resize: none;
-    height: 50px;
+  resize: none;
+  height: 50px;
 }
 
 .contact-form button {
-    background-color: var(--highlight-color);
-    color: #fff;
-    font-family: 'Booster Next FY Medium';
-    border-radius: 40px;
-    padding: 0.5rem 1rem;
-    align-self: flex-end;
-    margin: 15px 0 5px 0;
+  background-color: var(--highlight-color);
+  color: #fff;
+  font-family: "Booster Next FY Medium";
+  border-radius: 40px;
+  padding: 0.5rem 1rem;
+  align-self: flex-end;
+  margin: 15px 0 5px 0;
 }
 
 .contact-form button:hover {
-    cursor: pointer;
-    background-color: #504b4b;
+  cursor: pointer;
+  background-color: #504b4b;
 }
 
 .contact-form button:focus {
-    background-color: #2e2929;
+  background-color: #2e2929;
 }
 
 .contact-icons {
-    margin: 30px auto 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 320px;
+  margin: 30px auto 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 320px;
 }
 
 /* Tickets & Passes Page */
 
 .ticket-flex {
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
 }
 
 .ticket-text {
-    background-color: #EAF4F8;
-    padding: 25px 20px 20px;
-    text-align: center;
+  background-color: #eaf4f8;
+  padding: 25px 20px 20px;
+  text-align: center;
 }
 
 .ticket-img {
-    margin-bottom: -3px;
+  margin-bottom: -3px;
 }
 
-.tnp-section, .alert-section {
-    margin: 40px 15px;
+.tnp-section,
+.alert-section {
+  margin: 40px 15px;
 }
-
-.tnp-section p, .alert-section p {
-    font-size: 0.9rem;
-    line-height: 1rem;
-}
+/* 
+.tnp-section p,
+.alert-section p {
+  font-size: 0.9rem;
+  line-height: 1rem;
+} */
 
 .tnp-section p {
-    margin: 1rem 0;
+  margin: 1rem 0;
 }
 
-.ticket-detail, .ticket-img {
-    width: 100%;
+.ticket-detail,
+.ticket-img {
+  width: 100%;
 }
 
 .tnp-section button {
-    background-color: var(--primary-color);
-    color: #fff;
-    border: none;
-    border-radius: 30px;
-    font-size: 1rem;
-    font-family: var(--font-family);
-    padding: 0.3rem 1rem;
-    margin: auto;
-    display: block;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-family: var(--font-family);
+  padding: 0.3rem 1rem;
+  margin: auto;
+  display: block;
 }
 
 .hide-mobile {
-    display: none;
+  display: none;
 }
 
 .alert-section {
-    background-color: rgb(248, 155, 33, 0.15);
-    border-radius: 40px;
-    padding: 25px;
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: space-between;
-    align-items: center;
+  background-color: rgb(248, 155, 33, 0.15);
+  border-radius: 40px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .alert-section svg {
-    margin-bottom: 10px;
-    width: 95px;
+  margin-bottom: 10px;
+  width: 95px;
 }
 
 /* Events Page */
 
 .event-info {
-    margin: 0 15px;
+  margin: 0 15px;
 }
 
 .event-header-img {
-    width: 100%;
+  width: 100%;
 }
 
 .event-info-txt {
-    margin: 15px 0 30px;
+  margin: 15px 0 30px;
 }
 
 .films-presented {
-    padding: 30px 15px;
+  padding: 30px 15px;
 }
 
 .films-presented h3 {
-    text-align: left;
-    margin: 15px 0 10px;
+  text-align: left;
+  margin: 15px 0 10px;
 }
 
 .films-presented:nth-child(odd) {
-    background-color: var(--container-color);
+  background-color: var(--container-color);
 }
 
 .films-presented:nth-child(odd) p {
-    color: #fff;
+  color: #fff;
 }
 
 .films-presented:nth-child(even) h3 {
-    color: var(--primary-color);
+  color: var(--primary-color);
 }
 
 .film-title p {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .film-img img {
-    width: 100%;
+  width: 100%;
 }
 
 .event-video {
-    margin: 30px 15px 15px;
-    padding: 15px;
-    border-radius: 20px;
-    background-color: var(--container-color);
+  margin: 30px 15px 15px;
+  padding: 15px;
+  border-radius: 20px;
+  background-color: var(--container-color);
 }
 
 .event-video p {
-    color: #fff;
-    padding-top: 10px;
+  color: #fff;
+  padding-top: 10px;
 }
 
 .event-video div {
-    position: relative;
-    padding-bottom: 56.25%; /* 16:9 */
-    height: 0;
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
 }
 
 .event-video iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .director-bio {
-    margin: 0 15px 20px;
-    padding: 20px;
-    border-radius: 20px;
-    background-color: var(--highlight-color);
+  margin: 0 15px 20px;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: var(--highlight-color);
 }
 
 .director-bio p {
-    color: #fff;
+  color: #fff;
 }
 
 .director-img img {
-    width: 100%;
-    border-radius: 80px;
+  width: 100%;
+  border-radius: 80px;
 }
 
 .poster-img {
-    margin: 30px 15px 50px;
+  margin: 30px 15px 50px;
 }
 
 .poster-img img {
-    width: 100%;
+  width: 100%;
 }
 
 /* Footer */
 
 footer {
-    background-color: var(--primary-color);
-    color: #fff;
-    padding: 20px 45px 10px 45px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 20px 45px 10px 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer-wrapper {
-    width: 100%;
+  width: 100%;
 }
 
 .footer-logo {
-    text-align: center;
+  text-align: center;
 }
 
 .footer-logo img {
-    width: 156px;
+  width: 156px;
 }
 
 .footer-links-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
 }
 
 .footer-links {
-    color: #fff;
-    font-size: 0.8rem;
-    font-weight: 400;
-    margin: 15px;
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 400;
+  margin: 15px;
 }
 
 .footer-links:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .footer-icons {
-    margin: 40px auto;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 320px;
+}
+
+.footer-copyright {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-copyright p {
+  /* font-size: 0.5rem; */
+  line-height: 1rem;
+}
+
+.footer-copyright a {
+  font-size: 0.5rem;
+  font-weight: 100;
+  line-height: 1rem;
+  text-decoration: underline;
+  color: #fff;
+}
+
+@media screen and (min-width: 767px) {
+  /* 
+  h2 {
+    font-size: 3.2rem;
+    line-height: 3.2rem;
+    margin: 80px 15px 50px;
+  }
+
+  h3 {
+    font-size: 2.4rem;
+    line-height: 2.4rem;
+    margin: 60px 15px 50px;
+  }
+
+  h4 {
+    font-size: 2rem;
+    line-height: 2rem;
+    margin: 0 0 20px;
+  } */
+
+  /* .heading-wrapper {
+
+  } */
+  /* 
+  .contact-htwo {
+    font-size: 2.2rem;
+    line-height: 2.3rem;
+  } */
+
+  /* .tnp-htwo {
+    font-size: 2.7rem;
+    text-align: left;
+    margin: 0 0 20px 10%;
+  } */
+
+  /* Navigation */
+
+  .menu-button {
+    display: none;
+  }
+
+  nav {
+    background-color: var(--primary-color);
+  }
+
+  .navigation-container {
+    background-color: rgba(23, 18, 18, 0.46);
+    position: relative;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .navigation-container[data-expended="false"] {
+    transform: translateY(0%);
+  }
+  .navigation-container li {
+    background-color: rgba(0, 0, 0, 0);
+    padding-block: 1rem;
+  }
+  .navigation-container a {
+    font-size: 1.2vw;
+  }
+
+  /* Contact Page */
+
+  .contact-section {
+    margin: 25px 0 30px 0;
+    padding: 90px 60px;
+    box-shadow: inset 0 0 0 1000px rgb(255, 255, 255, 0.8);
+  }
+
+  .contact-wrapper {
+    border-radius: 50px;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+
+  .text-wrapper {
+    border-radius: 50px;
+    padding: 60px;
+    width: 80%;
+  }
+
+  .text-wrapper p {
+    margin: 50px 0;
+  }
+
+  .form-wrapper {
+    margin: 60px 60px 0 60px;
+    width: 100%;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+
+  .contact-form label {
+    font-size: 1.2rem;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 1rem;
+    margin-bottom: 40px;
+    padding: 15px 0;
+  }
+
+  .contact-form textarea {
+    height: 80px;
+  }
+
+  .contact-form button {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    align-self: flex-end;
+    margin: 15px 0 5px 0;
+  }
+
+  .contact-icons {
+    margin: 60px auto 30px;
+    max-width: 100%;
+  }
+
+  /* Tickets & Passes Page */
+
+  .tnp-section,
+  .alert-section {
+    margin: 50px 80px;
+  }
+
+  .alert-section {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0;
+  }
+
+  .alert-section svg {
+    margin: 0 0 0 20px;
+    width: 15%;
+  }
+
+  .alert-section div {
+    width: 85%;
+  }
+
+  /* Events Page */
+
+  .event-info {
+    margin: 0 80px;
+  }
+
+  .event-info-img {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .event-header-img {
+    width: 69%;
+  }
+
+  .event-poster-img {
+    width: 31%;
+  }
+
+  .event-info-txt {
+    margin: 40px 0 60px;
+  }
+
+  .films-presented {
+    padding: 60px 80px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    max-width: 320px;
-}
+    gap: 60px;
+  }
 
-.footer-copyright {
+  .films-presented h3 {
+    text-align: left;
+    margin: 15px 0 10px;
+  }
+
+  .films-presented:nth-child(odd) {
+    flex-direction: row-reverse;
+  }
+
+  .film-title p {
+    margin-bottom: 15px;
+  }
+
+  .film-txt,
+  .film-img {
+    width: 100%;
+  }
+
+  .event-video {
+    margin: 60px 80px;
+    padding: 60px;
+    border-radius: 50px;
+  }
+
+  .event-video p {
+    color: #fff;
+    padding-top: 10px;
+  }
+
+  .director-bio {
+    margin: 0 80px 50px;
+    padding: 60px;
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+  }
+
+  .director-img,
+  .director-txt {
+    width: 100%;
+  }
+
+  .director-img img {
+    width: 100%;
+  }
+
+  /* Footer */
+  footer {
+    padding: 30px 45px 15px 45px;
+  }
+
+  .footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 45px;
+  }
+
+  .footer-logo {
+    text-align: left;
+  }
+
+  .footer-logo img {
+    width: 305px;
+  }
+
+  .footer-links-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-}
+    margin: 30px 0 0 0;
+    gap: 30px;
+  }
 
-.footer-copyright p {
-    font-size: 0.5rem;
-    line-height: 1rem;
-}
+  .footer-links {
+    font-size: 1rem;
+    margin: 0;
+  }
 
-.footer-copyright a {
-    font-size: 0.5rem;
-    font-weight: 100;
-    line-height: 1rem;
-    text-decoration: underline;
-    color: #fff;
-}
+  .footer-icons {
+    margin: 30px 0 0 auto;
+  }
 
-@media screen and (min-width: 768px) {
-    
-    p {
-        font-size: 1rem;
-        line-height: 32px;
-    }
+  .footer-copyright {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
 
-    a {
-        font-size: 1rem;
-        line-height: 32px;
-    }
+  .footer-copyright p,
+  .footer-copyright a {
+    font-size: 0.6rem;
+  }
 
+  .copyright-icon {
+    order: 2;
+  }
 
-    /* Headings */
-
-    h1 {
-        font-size: 4.25rem;
-        line-height: 4.25rem;
-    }
-
-    h2 {
-        font-size: 3.2rem;
-        line-height: 3.2rem;
-        margin: 80px 15px 50px;
-    }
-    
-    h3 {
-        font-size: 2.4rem;
-        line-height: 2.4rem;
-        margin: 60px 15px 50px;
-    }
-
-    h4 {
-        font-size: 2rem;
-        line-height: 2rem;
-        margin: 0 0 20px;
-    }
-
-    .heading-wrapper {
-        padding: 6rem 0;
-    }
-
-    .contact-htwo {
-        font-size: 2.2rem;
-        line-height: 2.3rem;
-    }
-
-    .tnp-htwo {
-        font-size: 2.7rem;
-        text-align: left;
-        margin: 0 0 20px 10%;
-    }
-
-    /* Navigation */
-
-    .menu-button {
-        display: none;
-      }
-
-      nav {
-        background-color: var(--primary-color);
-      }
-    
-      .navigation-container {
-        background-color: rgba(23, 18, 18, 0.46);
-        position: relative;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
-      }
-      
-      .navigation-container[data-expended="false"] {
-        transform: translateY(0%);
-      }
-      .navigation-container li {
-        background-color: rgba(0, 0, 0, 0);
-        padding-block: 1rem;
-      }
-      .navigation-container a {
-        font-size: 1.2vw;
-      }
-
-    /* Contact Page */
-
-    .contact-section {
-        margin: 25px 0 30px 0;
-        padding: 90px 60px;
-        box-shadow: inset 0 0 0 1000px rgb(255, 255, 255, 0.8);
-    }
-    
-    .contact-wrapper {
-        border-radius: 50px;
-        padding: 30px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: stretch;
-    }
-    
-    .text-wrapper {
-        border-radius: 50px;
-        padding: 60px;
-        width: 80%;
-    }
-    
-    .text-wrapper p {
-        margin: 50px 0;
-    }
-    
-    .form-wrapper {
-        margin: 60px 60px 0 60px;
-        width: 100%;
-    }
-    
-    .contact-form {
-        width: 100%;
-    }
-    
-    .contact-form label {
-        font-size: 1.2rem;
-    }
-    
-    .contact-form input, .contact-form textarea{
-        font-size: 1rem;
-        margin-bottom: 40px;
-        padding: 15px 0;
-    }
-    
-    .contact-form textarea {
-        height: 80px;
-    }
-    
-    .contact-form button {
-        font-size: 1rem;
-        padding: 0.5rem 1rem;
-        align-self: flex-end;
-        margin: 15px 0 5px 0;
-    }  
-
-    .contact-icons {     
-        margin: 60px auto 30px;
-        max-width: 100%;
-    }
-
-    /* Tickets & Passes Page */
-
-    .tnp-section, .alert-section {
-        margin: 50px 80px;
-    }
-
-    .alert-section {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        gap: 0;
-    }
-    
-    .alert-section svg {
-        margin: 0 0 0 20px;
-        width: 15%;
-    }
-
-    .alert-section div {
-        width: 85%;
-    }
-
-    /* Events Page */
-
-    .event-info {
-        margin: 0 80px;
-    }
-
-    .event-info-img {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .event-header-img  {
-        width: 69%;
-    }
-
-    .event-poster-img {
-        width: 31%;
-    }
-
-    .event-info-txt {
-        margin: 40px 0 60px;
-    }    
-
-    .films-presented {
-        padding: 60px 80px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        gap: 60px;
-    }
-
-    .films-presented h3 {
-        text-align: left;
-        margin: 15px 0 10px;
-    }
-
-    .films-presented:nth-child(odd) {
-        flex-direction: row-reverse;
-    }
-
-    .film-title p {
-        margin-bottom: 15px;
-    }
-
-    .film-txt, .film-img {
-        width: 100%;
-    }
-
-    .event-video {
-        margin: 60px 80px;
-        padding: 60px;
-        border-radius: 50px;
-    }
-    
-    .event-video p {
-        color: #fff;
-        padding-top: 10px;
-    }
-    
-    .director-bio {
-        margin: 0 80px 50px;
-        padding: 60px;
-        border-radius: 20px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        gap: 40px;
-    }
-    
-    .director-img, .director-txt {
-        width: 100%;
-    }
-
-    .director-img img {
-        width: 100%;
-    }
-
-    /* Footer */
-    footer {
-        padding: 30px 45px 15px 45px;
-    }
-
-    .footer-content {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: flex-start;
-        margin-bottom: 45px;
-    }
-    
-    .footer-logo {
-        text-align: left;
-    }
-    
-    .footer-logo img {
-        width: 305px;
-    }
-    
-    .footer-links-wrapper {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        margin: 30px 0 0 0;
-        gap: 30px;
-    }
-
-    .footer-links {
-        font-size: 1rem;
-        margin: 0;
-    }
-    
-    .footer-icons {
-        margin: 30px 0 0 auto;
-    }
-    
-    .footer-copyright {
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-    }
-    
-    .footer-copyright p, .footer-copyright a {
-        font-size: 0.6rem;
-    }
-
-    .copyright-icon {
-        order: 2;
-    }
-
-    .footer-copyright a {
-        order: 1;
-    }
-
+  .footer-copyright a {
+    order: 1;
+  }
 }
 
 @media screen and (min-width: 920px) {
+  /* Tickets & Passes Page */
 
-    /* Tickets & Passes Page */
+  .tnp-htwo {
+    font-size: 2.7rem;
+    text-align: left;
+    margin: 0 0 30px 15%;
+  }
 
-    .tnp-htwo {
-        font-size: 2.7rem;
-        text-align: left;
-        margin: 0 0 30px 15%;
-    }
+  .ticket-flex {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1098px;
+    height: 350px;
+    display: flex;
+    flex-direction: row;
+  }
 
+  .ticket-text {
+    width: 54.3%;
+    height: 100%;
+    display: flex;
+    padding: 0 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 1rem;
+  }
 
-    .ticket-flex {
-        width: 100%;
-        margin: 0 auto;
-        max-width: 1098px;
-        height: 350px;
-        display: flex;
-        flex-direction: row;
-    }
+  .ticket-detail {
+    height: 100%;
+    width: 4.3%;
+  }
 
-    .ticket-text {
-        width: 54.3%;
-        height: 100%;
-        display: flex;
-        padding: 0 20px;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center; 
-        align-content: center;
-        gap: 1rem;
-    }
+  .ticket-img {
+    height: 100%;
+    width: 41.5%;
+    object-fit: cover;
+  }
 
-    .ticket-detail {
-        height: 100%;
-        width: 4.3%;
-    }
+  .tnp-section p {
+    margin: 0;
+  }
 
-    .ticket-img {
-        height: 100%;
-        width: 41.5%;
-        object-fit: cover;
-    }
-    
-    .tnp-section p {
-        margin: 0;
-    }
+  .tnp-section button {
+    font-size: 1rem;
+    padding: 0.3rem 1rem;
+    margin: 0 auto;
+  }
 
-    .tnp-section button {
-        font-size: 1rem;
-        padding: 0.3rem 1rem;
-        margin: 0 auto;
-    }
+  .hide-mobile {
+    display: block;
+  }
 
-    .hide-mobile {
-        display: block;
-    }
+  .hide-desktop {
+    display: none;
+  }
 
-    .hide-desktop {
-        display: none;
-    }
+  .alert-section {
+    border-radius: 50px;
+    padding: 20px 80px;
+  }
 
-    .alert-section {
-        border-radius: 50px;
-        padding: 20px 80px;
-    }
+  /* Event Page */
 
-    /* Event Page */
+  .director-bio {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 65px;
+  }
 
-    .director-bio {
-        flex-direction: row;
-        justify-content: center;
-        align-items: flex-start;
-        gap: 65px;
-    }
+  .director-img {
+    width: 100%;
+  }
 
-    .director-img {
-        width: 100%;
-    }
+  .director-img img {
+    aspect-ratio: 470/353;
+    object-fit: cover;
+    object-position: 0 0;
+  }
 
-    .director-img img {
-        aspect-ratio: 470/353;
-        object-fit: cover;
-        object-position: 0 0;
-    }
-    
-    .director-txt {
-        width: 100%;
-    }
+  .director-txt {
+    width: 100%;
+  }
 
-    /* Footer */
-    footer {
-        padding: 30px 100px 15px 100px;
-    }
-
+  /* Footer */
+  footer {
+    padding: 30px 100px 15px 100px;
+  }
 }
