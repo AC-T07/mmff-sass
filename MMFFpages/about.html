@@ -1,103 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-		<link rel="stylesheet" href="style.css">
-		<title>Mirror Mountain</title>
-	</head>
-	<body>
-		<!-- header banner -->
-		<header>
-			<!-- navigation -->
-			<nav>
-				<!-- dropdown menu for naviation links -->
-				<div class="dropdown">
-					<label for="nav-toggle" class="btn-head text-neutral">MENU &#9660;</label>
-      				<input type="checkbox" id="nav-toggle">
-					<!-- navContent class used to style and display/hide links on mobile -->
-					<ul class="dropdown-content border-radius">
-						<li><a href="index.html">Home</a></li>
-						<li><a class="currentPage" href="about.html">About</a></li>
-						<li><a href="#">News</a></li>
-						<li><a href="#">Schedule</a></li>
-						<li><a href="#">Tickets & Passes</a></li>
-						<li><a href="#">Submissions</a></li>
-						<li><a href="callForProposal.html">Call for Proposals</a></li>
-						<li><a href="#">Gallery</a></li>
-					</ul>
-				</div>
-				
-			</nav>
-			<!-- banner center -->
-			<div>
-				<h2 class="text-secondary">About</h2>
-			</div>
-		</header>
-		<main>
-			<!-- Mission section -->
-			<section class="mission wrapper container">
-				<h3 class="hide-on-desktop">Mission</h3>
-				<div class="wrapper float">
-					<h3 class="hide-on-mobile">Mission</h3>
-					<img class="escapeContainer" src="/images/about/about1.png" alt="picture of items representing mirror mountain">
-					<p class="">Mirror Mountain Film Festival brings the best in independent, alternative and underground cinema to Canada’s capital. We are a diverse and inclusive festival that welcomes all types of films and all types of people to share in the collective cinema experience. Our mission is to promote unique and original creative voices from the Ottawa-Gatineau region and from around the world. Mirror Mountain showcases innovative, groundbreaking and unconventional films in a wide variety of genres, including drama, documentary, animation, experimental, horror, sci-fi, fantasy, dance and music videos. In addition to film screenings, the festival features engaging, community-oriented activities such as live performances, hybrid media presentations, interactive exhibits, parties, panel discussions, Q&A sessions and more. Our events aim to connect filmmakers both with audiences and with one another, and to support artists through educational and professional development opportunities.</p>
-					<!-- icon -->
-					<a class="icon-btn" href="#"><svg width="77" height="77" viewBox="0 0 77 77" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-						<rect width="77" height="77" fill="url(#pattern0)"/>
-						<defs>
-						<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-						<use xlink:href="#image0_126_1875" transform="scale(0.0078125)"/>
-						</pattern>
-						<image id="image0_126_1875" width="128" height="128" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAOxAAADsQBlSsOGwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAABxxSURBVHic7Z15fFTV2ce/985MdrKThUBk38WKisALiCwiAQUrWkGlUqVq6+tatS1WcamibW2rvBXFIlYBRcQFWQRlUYosYpGdhH0J2QhZyUxm5t73j5OZuXdmkkwmk8wMze/zySdzzz333nPv7znb8zznORIXJ1KBScAEoC+QBchAPpAHrAQ+A04Hq4BtaBkkAM8DlYDayJ8FmAtkBKWkbQg4egIHaJx4979iYGTrF7cNgcRIoBwvBKe2M6gDu0aog7pHqhmJhoZag8nBKHiwIQW7AAHASESfHuNIkCW47X/ieHhCPFd2i0TSvOXek7W8sbaS+V9VYrWr2vtUA72AM61S6hCBIdgFaCZG4kZ+UqzMZ0+m8/ikBLKSjTryAdISDOQMbEdyl8fYujcXs7nCcSoCMXbY2BoFDxXIwS5AMzASN/LTEgx881wmYwdE13uRioF1xU+jJs/kgXs/RpJ0n2BwSxU2VBGuAjASL+R//XQG/bMj6r1IxcDa4tkcqroegPYpXYiOitdmyWyR0oYwwlEARtIM8nOrrnOm7d63mgs1Zdps+wJe2hBHuAnASAJE/sHcjby76JfuWTcFtLRhgHCaBYzET/LXFT/tbPYBdvzwEYs/ehi73arNegAYCJgDXO6QhjHYBfARIwkQ+d9te48lHz/mnvUsQnX8X0U+hIcADAdWoCG/fbyBr/wg/2DuRpZ++lv3rApwN8JG4A4JuALoX/f8U8A3CKXTRYFQ7wKGA6uAOEdC+3gDXz+TwaV+kD//3elYrV4r+RngWvRC8FNgDtDDLa8FmA88xUUgCKEsAC1MvoTQAjtRAIwCDgIvAU82Ur5DwFhEqxC2CNVZQIuSH9OuPdfc8jIGY6T28gxgPfAvGicfhNr4U8Dk0xuFKEJRFdzi5E+6fynZva8lreMA9ciPX6CqdkdLGAcM0N730j7J/OGxK5j60+4kxqvs2V+O6mo4MhE+Bt8354WDiVATgFYhPym9J6gqPVO6qz2zfiLv2rMCRbF73DdnTDZfLM5h0MA0+vVK5vphEl07Knz+lU55lAa83Yx3DipCqQsYCaxBQ35agoH1fpB/4tQPzF94p578+DQm/+rjOvIhXTWSpMpyn16j6NNzlMd9x17TkSVvjSUqUtQR1VaNai3j1pxk+vfU2RquJDxmU14RKgIwkgDN8wG2ff8BVpvFeRwTn8bk+5eRmNYNCUhXDSSpMqqqsnzFU+zZv0Z3fVZGLMveGUeESXweVbFgv3AUR9vfNVs3dpARnkhhiVAQgJEEkHyATlmXOX97kK/oyd+0eb7u2hFDMtm/5TY9+VW5oNQCoCiw51CN9pJa4HwT3zlkEOymqx/COTNg5KtA18G3cV10NGXFR+g96GfEJWQiAWmKgcQGyM8Zk82St8bWSz7AXY8f49gpi/ayzQhlUlgimAKQiCDfaY/1l/yamnIqKotIS+tBkWznvKTQ/Sc3OM87yG+o5o+7thOL5o1pkPw3FhXzyVqPyv5Bk988hBDMWcDTwI2Og+Q4mQ2zM5uu3s3bxKtzx7Ph23mcLj1K+gB9q+AL+Tljsvnw7euIjKgb8CkWlKo8HfnzFhfz5MtedT49gOVAla8vHkoI1hggDXjQWQgJPngkzS/d/vx37sBiEd9+786PMVe7aqiv5Ls3+0pVHqriaubnLS7miTmntPN/LXojFEhh6UwSLAG4CYh1HNw+PM4nNy4P8hfeqRvtJ6R2JjJa9Cj+Nvvu5C/4qMSD/Kx0EwaDToveG+FL2MHXDxAqCJYATNAePDKx/lmUr+THxKcx4Z73kGSDIF9tnPwP5mvm+fWQ//DzJ3Xk9+kaxaevdeMvT2S5C0FPYANhJgTBEoD+jh8ZiQZ+0tl7098U8iffv4zE9l1d5CstQ/6/XupMYryBCSMSLgohCJYAOPvLLmmertvQiHpXS3679ky670PnPL81yHfgprFJF95+qTPGMBaCYAiApH2uQfZkv8GaX496t7XJj4gykJRqipkyPom354SvEARDAFSg0HFw6pzN7WQTm/0g1PzIKANJKa6W6+brw1cIgtUFOD1vThTbOFwgnDO9+vBtf58335kWUuQnpnh2W+EqBMFSBKUBTh/tCKPE2MviPMjfvvNDFn/0MKrq0rS6TLo9QoZ8B/p2j6ZH5yi+WF+O4rpXCnADQllUWZfWHlfMgguNf66WQ7BagOWAs+3/vzUVvLlrpkezv2TZo/qrJIkhE2e5TLpKa5IvN0i+Aw20BBuBF4BcoKjufzHCBe1RIKrhO7cMgtUCnAeyEX742BTYui+Py/rnEB0Vz559a1jw3gxs9lqPC0/lbiLjkivUHsldpJaa53uQH20gMdXUKPkO9O0ezSVZkazaoPMeSgFG1P3XIhUYh2glVtHKjqbBdArtCPwIJDsSZNlIbEwilVUl7nkVNK2VyRSl3jtjkdSj27BWqvm+k6/FkhWl3P/UCeyKdx2yF+wHhgAVjWUMFIJpDKoAvgPucJRDVRVqaz26xEJgKsJtux2AotikXbtXcPrMbrZ9rzfGhQr5AHExMktWlGK26K3FwwdnMvaajsREGzh1plp7qj3iW3zl3xObjlBwC58KLMB7H3gQYTHMQwR7Wg+k13ejQJIfFS2TkGLy+wMdO2Vh/IxczhS6lp9JEsx65ApmPTIQAMVazocf7eCe3x1DcclIJUIQLLQCQsEpdC+wCKhBLM2yIlbfzAXuQwyYQAyYVgFT0PgNOhDq5EdGGFj6z+v4xbTedSkqSs1J+naTyTtuZn+eU8EVCXwJnPTz8U1CsD2CHDgO/N6HfAeAdYhuw4lhgzNDhvyjJy3k/MKT/CVvjWH86GxnmlJzFtUmZoVDB8bx0Sqdo0mr6Q1CRQB8xcu4kZ+VEcvKxTlNtuf36x7Fuy91JiEuCOSbz6JYzjqPzxbrVilDKzqXhIJTqK+4FXhcmzB6RJaHA2dYkG/Odx4Xl9p49+Nz2lupwH/8LEaTES4CICPW6zmRMyab5QuvD2vyS8tsTL43j8ISXQvwNWK5eqsgFGYBvmAwYsoIwIB+KWz6bFKDfX6ok19SauP6GbkcOqpbrVwLDAV2+lmcJiNcxgC69Xr339UvMOTHyCQktwb5BTryC0qsXJazjws1Ov2ACtxPK5IP4SMAMdqDlCSxMke1lmOvOQGKi4DWIv9kfi03zMzTkR9hknl/3mgv5LtiT5ZV2MmZkedOPgg7wQI/i+M3wmUMoIveufGbXOyVB7BXH9aRP/dfha1G/vgZuZzMd9kqIkwyi94cw8SxlzjTvJE/6Zd55B33GqTiboTRSIsM4I8Ik3I+YhHKX4EufhbdA+EyBkhBBHAwApiMEgv/1IUbxyQCYrnWmDsPsWO3Tq0akuT/sK9B628hIkjFfoThaDmexiMQJuTpwMd+voYT4SIAIJZg361NuKJ/DNkdItm+u5ozBXrLYaeMCD55vWtAB3yBJF+SJIYNuYut2xfrnF0QQvA48A+8aDw1sAJjEFpTvxFOApAMbAO6+5LZYJD465MdGT9crBOIijaQkGIMGfJvnvQiI4bezYHcDby9cLq7EKhouDEaJLpnGDlWZMNi9Qhr0w8o9fO1QsIW4CtqEKuIxyA8ihqEqsLaLZV06xTJgN4xtoQUoxf3U9/QUuSDCFfbKWsAbkEqnEVNTzDw7XOZPH9bEneOiOP9f5u4YHauTo6ry+u39TCcBACEI8kCoAQxQPLY7UOWDah1o0BVhbX/rqRv72i5f4/6Vx41hJYk34H2qV2RZQO5h7/VpSfFyWx6roMzQEZirExC1lRWbdnufEeEU808RAVpMsJNAEC4km0DliHcrAagMREPGXQnNeZyZwxgVYWV68vpekkk/ZooBK1BPkDu4W9Zuvxx7IrLQ1qWYcMzmVzeRb9oxhp9LXvykziTv9eRZEJYVHc36eUcz/HnoiCgEzALYSY9iJD2EoR5+FJHpsiIWK4b9TD/e+8npCS7CLIrKvfNOsG2XfpZQkNoTfLfeucOaq2uCpwQI7NpdiZX94j0yG+2t2PIoNvdkz0DJfiIcBCA+xGkv4DwJO6FF+cR8ZH/SHJSR5ISs3jwvk91QmC1qaze5Ju7XTDJT08wsOWPHRjWx7uPaIm1J52zr8SkD3HXzacX84JQF4BfIqZDMQ1laheXys+nzmPwVdOcaQ4haJ8idCayLDNqSGKjDww2+etnZ9K3o/fQgzX2JIrMvZFlA/HxOscov5emh7IqOAP4k3tiXGwKSUkdSYzPJDm5E12yr6R/33FERHjKSFJiFr95aB37DqyjQ0Yf7KZzKOocZMkzJBw0VbfvIl9VYcqvD3uQP2XyHIYPmeHxnCPHtjJ/4XQd+WkJIv5xfeQD7KuchFJHmdu00e8g16EkACbEquEERPjV29GEj+lyyVVMn/oGKcnZ9VzuHdFR8Vx5+c0AHC8AdsGg3i+yaWsZvbtFOSN++Us+wPlym2580RD5/tR8gGp7KjvLpgNgsVRRpfec9tt8HAoCEIcIF3MvGsLROEVKksQdt81tMvnecDR/KA//oZSjJ44RYZJ4e05nLusd4zf5AEkJRq64NIOdewqQJIlbJr/MsCF3eeTzl3wFI2uLnqVWFTE1DuRudA9sucv3L6BHsAUgFeEAMcDLOecoJ7vj5c6+3B8oEpSjUCkpFJQe5eiJYwDUWlVmPHGchDgDpeWuKVhTyAfIPzeQ6dOWcvmBzaSkXEJWZj+PPP42+4oqdjs5bb7Smbbhm3+4Z/uiofdvCMEWgEV4J1+HsvJ8FMWGLDe9uFZUTsp2rHWRweOSO5GU1p3zRYcBsNvVJpN/vtzGA7NPcvCImelTriI5fTaSIYIB/XO8lsHfmq9i4KuSp8mrHutM+/a7dzh2Qhea+ATNsAcEcxZwLZoFopIEPxsayzO3JNKrg/6jlFcU8OJfRqAoNvd7NAgVOKMhH6Do1C7iU7LxttrDF/JLy2xMvCePz78qI/eYmWde/Y7yqvr1C343+6qBL4ue1a2XPJC7geWfP+We9VmEJ5FfCKYA6LZqfeWOZD54JI3Ztyax99UsslP1tb2o+HCThcAsKZilOvJVlS0rnuOTuTdx4sB6dE4DdfCF/Btm5rH7oFbrKiPVs3SoOeSvLX5WV/MdRiO3fY42IsLb+41gCoCuU79ndDvnb6NB4tDfs+iU0jwh0FaLHev+yq6Nb+qWmmtx19ReTSZfDPheJCbaU7/gb5/vrdk/mLvRm8XwBMJT2vuc1kcEUwB0xouCMv17REXI5L7WPCFwNP1V58+w86vX6s03+Mp03nhlhPPYnfzCc1ZG3X7Ig/wpk+cw9OrpHvc7cmwr8/45FUutq2vwNwqqt+goCJ+BHMRqqWYhmAKgG8ncP7+Emlp9s9xcIbDWtcx5uz5D0Ted67UHAy9NrfulYq85rSO/uNTKgPH7OHLSRUBjSp5WIN/hNdRsBFMA3kcTHWPjPjM3vlwYUCGw1QlA4QmPdRZPaw8O5JagWAqxV+5HtTjDF1FaZuP6uzwdOK/5n5kXBfkQXAE4CzyhTfhqdw2PvnvOI2NUhEze6x3rGRgO9yoEKlBT199XleVrT1mALYj1iABs3FLIilX7UO0ujWpxqejzc495alm3bHuPvCObdWnhSD4E3xj0L9w8frcf9r4qOtJU38DwiNeWoES2o9S1ANXlOk3pWYR8OLd5UVW445Gj3PfUCd5ZVsJLb5xl6JQDbqN9F2qtNby54HanA0e4kg/B9Qlsh9giZqg28c939+Ox6+v3nLVYVXo+eJqTJXrC09p34/ePfQsGIyUolMpiUKnYrbz5ZFft6H8jQgcRC+wA+vhQVhV4HpiJxvIWYYpm4vhZrFzzUliSD8FrAWIRu4HqyJ8w7rfE9/2U4tpe9V4YaZLIfa0jl7T3bAme+8twcqlxkg+Qf2Sr+9TvaN3/akTwicONlLUWuAd4BrFPYJHzhLWG5Z8/FbbkQ3AEoB2wFrhGm3jD+FmMG/0oZnsCnxa8zsmq7sxdU8G8tZWY9Z6wRJokDv4ti05uY4LS4iMsfmWU6A5UlVO537Bh6W/cn6+dARwGBgGv4elTpyIWZAzDtWJnH4KQIrwg3MiH1u8CvDb7N4yfxdhrH9JlfP+Du9n+wwoAxgyI5vMn04mO0BfXXKvQ86EznHLrDqJjk5ENJqorCnHDKYRHkbfOPQaxCLUDIn7RD8Dpet5jOrAQzfdLiJHZ/LwfG14EkXxoXQHwmXyA51++muJzx5zHDQlBpweqKTnvEVnMHWZEk7/Or9K7cA3CF9HpgSLLsOnZTIb1rj/Unzfy61kTkI8g/1Azy+kTWssruEnkA9jstRzK2+Q8PlpoY9thC7cMicWkCcJoJYn4fmvYunM5ZnOlt1sBHAF+hpsCyA9kApvQ+C0kxYqtbob2Cj/yoXUEoMnkA3TtPAibrZajx7c509yFwK6aWFv8HOftvRg+5C52/PARNWZdiL1qhF/hr2l8sOcL/oBYmAIIw86m5zp4uG5rEcrkQ8sLgF/kO9CrxwgstlqOuQnB5lyZywdMZGPZbPLNlwMiyOTwob9g996VVFU7lUkRCGWT10GbH5iNiHBKhFFi8wuZ9O9UP/lCQJ8lt9pp9Q4p8qFlZwHNIh+gFpX+E59k4Oj/1aVv2lvKz/58iLNVnXTpBoOJyy+b5H6bTu4JzUBv548sU4Nb2l6wp/BZwWvkVTsbjJAjH1pOAAJC/kmDHRsqg3N+y8BRD+jOH8r7hrcW3qHbQAKEPsANgYy96xyVHimwkX/e0xJboySws3w6751eyhnzQGd6KJIPLeMSFlDyQYSQra70mNJxKO8b5i2Yxq03vUxiYge2bl/Mzl2faLNUAnv8ew2v2IHYLJpqi8LA35l5+Vc/p3enJMxKAiW1PSm09MWu6u39m79byMefP4VdH/w66ORD4KeBLUL++g8f5dCOj/wpz6vAY/5cWA96IzxwnQ6rBoOJwVdNY8hV0+jU8TIkSTSqtbUXOJi3ia83zuXYiR3u9wkJ8iGwAtCa5O9HxA5uCPsRip1654Z+YhpCCeTh1hMZEUtiYgdqa2uoqCxyr/EOnECEhw86+RC4WUBrkr8Y4UxajNh53Jt/1XqE0sfvwAkNYA9CRTwBtwgedruV6upSzOYKVNWrp9ZmRNlPtEC5/EIgWoDWJn86Lj+4DojQsYOAaMQg7TOar+3zBanAb4CHaHy3j9MIa+ICNDulhAKaKwCxiKgdOsPOhHG/ZdzoR71f4YYmkL8UsVwspD4gIjbBRESz3h2xptGC8HP4EbFoYz2tFP69qWiOALSRfxHAXwFoI/8igT8C0Eb+RYSmCkAb+RcZmiIAgSdfsbPs7xMoPu2hrCtEBD7yebutNjQKK2IbmuUIjyzAdwFokZr/2Ru3kH9kq49FaEMAsRh4EDjniy2gxZr9NvKDhmkIJdakxjSBrdnnt6F10QsobKgLaDXyu/SZyDWT/u41AISiKqrZck5SvKtW2+ADIoztkJHZ//1Cvt8wR3vq+/oEICTIV1UVs/U8qtJGvj+QJAMmYwxGg0tT/cnb4zhfdNBxWO1tDBAS5IsXkIiOSPZ6rg1Nh6LYsFp0xlGr+5dvEfLXvDuTY3vW6PJ16DKc/lfPpLToQNPeog1+wWqp5sDOd6kq1y3F3KntAlqE/A//PJrSgtxmFb4NLQIVGOvwCWwR8tct+nUb+aGLt4CvZYRf4KfUs1bPF9TX5x/+z+eBLXIbAgEL8CTwKxDk/xzNYgdoOR++m268idjY2GaVvg31Y9nyZZgtTi/pcsRGEg5YEA4zaxBbzQBCFbwKGO9ImDjud1w3+hGfHtgU8jPSM/h4yfKmvE8bmoDyinJyJo/XJq1CuK01CBm43HHQPrVri5APcGm/S72mtyEwOHb8mHuST9MrvxaG+KPe7dPbl0AcbfAXZws8Aob75HVsRKyDzwEoLjnK2vV/47pRD9d7ga/kp6T14Zxmjr/6y9V8t825/zOSLGMy1R8wsTWRkZHOYw//hsxMv/ddCAoqyiuoqqgCoLq6yv20Z7QtLzAi7MPOKMdfrHkRSZIZe+2DHpl9Jb9bv0lUlp3SpeUdyfOlPEFDUVERi99fEuxi+I0LFzziKvm0HkIG3sVt37kVq19g3QZ9ZE3v8/wHvJI/4sa/YrV4SGRIo6Sk0QATIQdFccU+ao4A2ICbAZ1xfsXqF/jy61cB7+SvXng3h//zme5mXfpMZPgNryJJBuKSmr+5Q2shNSWV3/9uVrCL0XRoAl5fqPFPABy2gAqELmAVYtNiAFZ+OQcb0Ou6Bz2a/eN71+pu1LHbSJ1hx2DQ9++rPllFQoIIqhwTF0tqmrc9kdvQFCiKSwBqzB4BLX3aI09rDKoGbkAoCoY4Er/8cg7nJTtXjHkQxW5l49InOLRzmceNfjLsQZ1Vz2jSb+JktlhIqPttMgV7n4qWw569e3h97mtUVbV8F1hrqXV2A8dPeqw2a2y1EuC5PLwCsQmhTgi2r/kTezYvwG6rpbaeODxuwZgxReg1fjWaJupiFoCZv7yHM/net5ZpZfjUxHrTA1QgAiLqtiGpqTpXL/kANpu+CYp0i6Ffcs41K5EN4bhjbeNQFIWy8rJgF8OBJF8y1acI0nYH9UG303FtjT4QR1x8lu64QKuoqGeHjXCHLMs8/+zzJCQkNJ655eFTLWuoLa5A6JJvrfs/EBFg8QdgCWJ/v+GOzI4IHqqqIEkycYn60Dynz7hiLl6c9AvcMuVWbplya6s8q+x8ORXnRcVbuWYlL77yR+1pn6Swsc5YAT6o+3PHVdqDC1WFqKqdC5ZSYqJSSGrfU5f5YG5IxEO4qGDUdKXJSR6uc119uUdzgkTpwqhWnD+hXLCUoqp2FHst0bHtiW3nUq0eyj3o3PNesXvft6cNTYNRM5ju0tljX0XPzQu93aMZzz8LnKdusFFatE92RMWwK1YMhihSOwyg+pDo+ysqK1i5+gvS0zOIT2hHVEx0kx8oSRLdu3UnIyPD41xZWRkHDh7AZvvvWUqo2O2UFInBtaqqREZGYrE4wxBchd7Pw4yITKLT0Te3O96EU3EkcdOvv8YUEYssGYmJSuXgD++zZU1gNWxGo5F/zl/AqGtHOdMOHznM5J9Oorw8kBHhLlp8D9wN7Ibmh4n7EacAqJTk/0hm56Eoqo2a2lIyugxp8GJ/YLPZ+Mf8RUSnXu1MW/bB8jbyfceVwE7gLmBRcwNFbtIeFBx3mRPs9lqMUbGkZ1/lcVFzYTH2Ztn6MudfYU0PLu65RcBhBP4OdGvuV0tEROsyAsQldiRnxjK0ZFhrqzm+fyU1Vc3e4g5Jkkls34NOPUfjTnjRqZ0UndqJoli9X/xfguryfCw1ZcQnd8YYIdTxkmTAKEdw/OBqKstOarMvCUS12YjGo/iam18nPXtQAG7bhkBAliOIjkhAkgyYL5xj2byR1LoiqhcEQim/AI0A7N+64HznHuP3o+ripZpwVFlJlVF1sf2MaLRWKqozCicqBlBdZZSIcNZ8VTWgH8OYVNRg74IWMpAkkCQjBtn16aNiUkhI7kZxvnMfxaRAtABRCJ2A0/gwfOKf6THglgDcug2BRNHpnax6/1btFnuHAzVyegj4m+NAkgxkZA9Cki9Oo084wmatoST/R/f9FV8JlAAYgO9wUw+3IaRxFBgQqD7TDkxC6AXaEPo4CUwFqgPZRlchrIQxiBi+IWETbYMTVsTSsHcQMYKOAPw/Ga61HllGS5oAAAAASUVORK5CYII="/>
-						</defs>
-						</svg>
-						Code of Conduct</a>
-				</div>
-			</section>
-			<!-- Our team div for carousel -->
-			<div class="wrapper team">
-				<h2>Our Team</h2>
-				
-				<iframe class="" src="/mockup/" title="Iframe Example" scrolling="no" ></iframe>
-				
-			</div>
-		</main>
-		<div class="footerLogo">
-			<!-- icon -->
-			<a class="icon-btn" href="#"><img src="/images/logos/RGB_text_horizontal.png" id="logoFooter" alt="icon"></a>
-		</div>
-		<footer class="footer-grid">
-			<div>
-			  <!-- logo and social icons -->
-			</div>
-			<div>
-			  <ul class="lh-2 wrapper pt-0 footer-flex">
-				<li><a href="#">Archive</a></li>
-				<li><a href="#">Get Involved</a></li>
-				<li><a href="#">Privacy Policy</a></li>
-				<li><a href="#">Contact Us</a></li>
-				<li><a href="#">Annual Schedule</a></li>
-				<li><a class="btn-cta btn-active" href="#">Tickets &amp; Passes</a></li>
-			  </ul>
-			</div>
-			<span class="socials">
-			  <!-- social icons -->
-			  <a class="icon-btn fa-ig" href="#"><i class="fab fa-instagram"></i></a>
-			  <a class="icon-btn" href="#"><i class="fab fa-facebook-f"></i></a>
-			  <a class="icon-btn" href="#"><i class="fab fa-twitter"></i></a>
-			  <a class="icon-btn" href="#"><i class="fab fa-vimeo"></i></a>
-			  <a class="icon-btn" href="#"><i class="fab fa-youtube"></i></a>
-			</span>
-			<p>&copy;2023 Mirror Mountain Film Festival</p>
-		  </footer>
-		  <script src="https://kit.fontawesome.com/6167e29d85.js" crossorigin="anonymous"></script>
-	</body>
+    <link rel="stylesheet" href="../MMFFcss/aboutGetCall.css" />
+    <title>Mirror Mountain</title>
+  </head>
+  <body>
+    <!-- header banner -->
+    <header>
+      <!-- navigation -->
+      <nav>
+        <!-- dropdown menu for naviation links -->
+        <div class="dropdown">
+          <label for="nav-toggle" class="btn-head text-neutral"
+            >MENU &#9660;</label
+          >
+          <input type="checkbox" id="nav-toggle" />
+          <!-- navContent class used to style and display/hide links on mobile -->
+          <ul class="dropdown-content border-radius">
+            <li><a href="index.html">Home</a></li>
+            <li><a class="currentPage" href="about.html">About</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Schedule</a></li>
+            <li><a href="#">Tickets & Passes</a></li>
+            <li><a href="#">Submissions</a></li>
+            <li><a href="callForProposal.html">Call for Proposals</a></li>
+            <li><a href="#">Gallery</a></li>
+          </ul>
+        </div>
+      </nav>
+      <!-- banner center -->
+      <div>
+        <h2 class="text-secondary">About</h2>
+      </div>
+    </header>
+    <main>
+      <!-- Mission section -->
+      <section class="mission wrapper container">
+        <h3 class="hide-on-desktop">Mission</h3>
+        <div class="wrapper float">
+          <h3 class="hide-on-mobile">Mission</h3>
+          <img
+            class="escapeContainer"
+            src="/images/about/about1.png"
+            alt="picture of items representing mirror mountain"
+          />
+          <p class="">
+            Mirror Mountain Film Festival brings the best in independent,
+            alternative and underground cinema to Canada’s capital. We are a
+            diverse and inclusive festival that welcomes all types of films and
+            all types of people to share in the collective cinema experience.
+            Our mission is to promote unique and original creative voices from
+            the Ottawa-Gatineau region and from around the world. Mirror
+            Mountain showcases innovative, groundbreaking and unconventional
+            films in a wide variety of genres, including drama, documentary,
+            animation, experimental, horror, sci-fi, fantasy, dance and music
+            videos. In addition to film screenings, the festival features
+            engaging, community-oriented activities such as live performances,
+            hybrid media presentations, interactive exhibits, parties, panel
+            discussions, Q&A sessions and more. Our events aim to connect
+            filmmakers both with audiences and with one another, and to support
+            artists through educational and professional development
+            opportunities.
+          </p>
+          <!-- icon -->
+          <a class="icon-btn" href="#"
+            ><svg
+              width="77"
+              height="77"
+              viewBox="0 0 77 77"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <rect width="77" height="77" fill="url(#pattern0)" />
+              <defs>
+                <pattern
+                  id="pattern0"
+                  patternContentUnits="objectBoundingBox"
+                  width="1"
+                  height="1"
+                >
+                  <use
+                    xlink:href="#image0_126_1875"
+                    transform="scale(0.0078125)"
+                  />
+                </pattern>
+                <image
+                  id="image0_126_1875"
+                  width="128"
+                  height="128"
+                  xlink:href="data:image/png;base64,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"
+                />
+              </defs>
+            </svg>
+            Code of Conduct</a
+          >
+        </div>
+      </section>
+      <!-- Our team div for carousel -->
+      <div class="wrapper team">
+        <h2>Our Team</h2>
+
+        <iframe
+          class=""
+          src="/mockup/"
+          title="Iframe Example"
+          scrolling="no"
+        ></iframe>
+      </div>
+    </main>
+    <div class="footerLogo">
+      <!-- icon -->
+      <a class="icon-btn" href="#"
+        ><img
+          src="/images/logos/RGB_text_horizontal.png"
+          id="logoFooter"
+          alt="icon"
+      /></a>
+    </div>
+    <footer class="footer-grid">
+      <div>
+        <!-- logo and social icons -->
+      </div>
+      <div>
+        <ul class="lh-2 wrapper pt-0 footer-flex">
+          <li><a href="#">Archive</a></li>
+          <li><a href="#">Get Involved</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Annual Schedule</a></li>
+          <li>
+            <a class="btn-cta btn-active" href="#">Tickets &amp; Passes</a>
+          </li>
+        </ul>
+      </div>
+      <span class="socials">
+        <!-- social icons -->
+        <a class="icon-btn fa-ig" href="#"><i class="fab fa-instagram"></i></a>
+        <a class="icon-btn" href="#"><i class="fab fa-facebook-f"></i></a>
+        <a class="icon-btn" href="#"><i class="fab fa-twitter"></i></a>
+        <a class="icon-btn" href="#"><i class="fab fa-vimeo"></i></a>
+        <a class="icon-btn" href="#"><i class="fab fa-youtube"></i></a>
+      </span>
+      <p>&copy;2023 Mirror Mountain Film Festival</p>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/6167e29d85.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
