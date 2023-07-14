@@ -3,29 +3,30 @@
     h1 {
         font-size: $font-size-3xl;
         line-height: $font-size-3xl;
-        font-weight: 400;
+        font-weight: bold;
     }
 
     h2 {
         font-size: $font-size-xl;
-        font-weight: 400;
+        font-weight: bold;
     }
 
     h3 {
         font-size: $font-size-lg;
-        font-weight: 400;
+        font-weight: bold;
     }
 
     h4 {
         font-size: $base-font-size;
-        font-weight: 400;
+        font-weight: bold;
     }
 
     p, a {
         font-size: $font-size-sm;
         line-height: $base-font-size;
-        font-weight: 400;
+        font-weight: normal;
     }
+
 }
 
 @include md {
