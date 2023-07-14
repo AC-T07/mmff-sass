@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+$background-color: #484ca0;
+$container-color: #5859c9;
+$title-color: #f89b21;
+$text-color: black;
+$light-text: #e8e8e8;
+$hover-effect: #d8e990;
+$title-font-size: 4rem;
+$second-font-size: 2.5rem;
+$third-font-size: 2rem;
+$text-font-size: 1.6rem;
+$items-spacing: 1rem;
+$text-spacing: 1rem;
+/* ---------------------- */
+
+* {
+  padding: 0;
+  margin: 0;
+  //   border: 1px solid red;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Quicksand", sans-serif;
+  box-sizing: inherit;
+}
+/* --------elements-------------- */
+/* -------------navigation------------- */
+nav {
+  display: block;
+  position: relative;
+  background-color: rgba(23, 18, 18, 0.46);
+}
+.navigation-container {
+  width: 100%;
+  background-color: $background-color;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  transition: all 500ms ease-in-out;
+  /* justify-content: space-evenly; */
+  align-items: center;
+  list-style-type: none;
+  z-index: 5;
+}
+
+.navigation-container > * {
+  width: 100%;
+  font-size: $text-font-size;
+  list-style-type: none;
+  padding-block: 1.5rem;
+  text-align: center;
+  background-color: $container-color;
+}
+.navigation-container a {
+  white-space: nowrap;
+  padding: 1rem;
+  font-weight: 500;
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  transition: all 400ms ease-out;
+}
+
+.navigation-container[data-expended="false"] {
+  transform: translateY(-150%);
+}
+.navigation-container[data-expended="true"] {
+  transform: translateY(0%);
+}
+
+.navigation-container a:hover,
+.navigation-container a:focus {
+  background-color: $hover-effect;
+  border-radius: 10rem;
+  color: black;
+}
+// ----------------------------------------
+
+h1,
+h2,
+h3 {
+  font-weight: 800;
+  padding-block: 0.5rem;
+}
+
+h1 {
+  color: $title-color;
+  font-weight: 400;
+  padding: 7rem;
+  padding-block-end: 12rem;
+  font-size: $title-font-size;
+  text-align: center;
+}
+h2 {
+  color: $title-color;
+  font-size: $second-font-size;
+}
+
+h3 {
+  color: $title-color;
+  font-size: $third-font-size;
+}
+h4 {
+  font-weight: 600;
+  line-height: 2rem;
+  font-size: $text-font-size;
+}
+span {
+  color: $title-color;
+  font-weight: 700;
+}
+
+p,
+th,
+td {
+  font-weight: 400;
+  line-height: 2.2rem;
+  font-size: $text-font-size;
+  color: $text-color;
+}
+th {
+  font-weight: 900;
+}
+
+button {
+  width: 100%;
+  padding: 1rem;
+  font-size: $third-font-size;
+  border: none;
+  background-color: rgb(0, 0, 0, 0.5);
+  color: white;
+  cursor: pointer;
+}
+
+@media only screen and (width > 767px) {
+  /* --------------------------------------------- */
+  main > * {
+    padding-inline: $items-spacing;
+  }
+
+  button {
+    display: none;
+  }
+  .navigation-container {
+    position: relative;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .navigation-container[data-expended="false"] {
+    transform: translateY(0%);
+  }
+  .navigation-container li {
+    background-color: rgb(0, 0, 0, 0.5);
+    padding-block: 2rem;
+  }
+  .navigation-container a {
+    font-size: 1.6vw;
+  }
+}
