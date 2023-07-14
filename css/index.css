@@ -2285,7 +2285,7 @@ body {
 
 @media only screen and (width > 767px) {
   /* --------------------------------------------- */
-  button {
+  .navigation-button {
     display: none;
   }
   .navigation-container {
