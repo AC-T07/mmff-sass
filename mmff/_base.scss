@@ -1,14 +1,34 @@
 // font import
-@import url('https://use.typekit.net/lpf4cax.css');
+// @import url ('../assets/fonts/Booster_Next_FY/BoosterNextFY-Black.otf');
+// @import url ('../assets/fonts/Booster_Next_FY/BoosterNextFY-Bold.otf');
+// @import url ('../assets/fonts/Booster_Next_FY/BoosterNextFY-Light.otf');
+// @import url ('../assets/fonts/Booster_Next_FY/BoosterNextFY-Medium.otf');
+// @import url ('../assets/fonts/Booster_Next_FY/BoosterNextFY-Regular.otf');
+// @import url ('../assets/fonts/Booster_Next_FY/BoosterNextFY-Thin.otf');
+
+@font-face {
+  font-family: "Booster Next FY";
+  src: url('../assets/fonts/Booster_Next_FY/BoosterNextFY-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
+	font-family: "Booster Next FY";
+	src: url('../assets/fonts/Booster_Next_FY/BoosterNextFY-Bold.otf') format('opentype');
+	font-weight: bold;
+	font-display: swap;
+}
 
 // reset styles
 * {
 	color: inherit;
 	margin: 0;
+	font-size: $base-font-size;
 }
 
 body {
-	font-family: 'quicksand', sans-serif;
+	font-family: 'Booster Next FY', sans-serif;
 	font-weight: 400;
 	font-style: normal;
 	letter-spacing: 1px;
@@ -31,10 +51,6 @@ hr {
 
 img {
 	max-width: 100%;
-}
-
-h1 {
-	text-wrap: balance;
 }
 
 body {
