@@ -11,39 +11,31 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../MMFFcss/aboutGetCall.css" />
+    <link rel="stylesheet" href="../MMFFcss/globalMediaqueries.css" />
     <title>Mirror Mountain</title>
   </head>
   <body>
     <!-- header banner -->
     <header>
       <!-- navigation -->
-      <nav>
-        <!-- dropdown menu for naviation links -->
-        <div class="dropdown">
-          <label for="nav-toggle" class="btn-head text-neutral"
-            >MENU &#9660;</label
-          >
-          <input type="checkbox" id="nav-toggle" />
-          <!-- navContent class used to style and display/hide links on mobile -->
-          <ul class="dropdown-content border-radius">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
+      <div class="navigation">
+        <button class="menu-button toggle" data-toggle="false">Menu▼</button>
+        <nav>
+          <ul class="navigation-container" data-expended="false">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
             <li><a href="#">News</a></li>
             <li><a href="#">Schedule</a></li>
             <li><a href="#">Tickets & Passes</a></li>
             <li><a href="#">Submissions</a></li>
-            <li>
-              <a class="currentPage" href="callForProposal.html"
-                >Call for Proposals</a
-              >
-            </li>
+            <li><a href="#">Call for Proposals</a></li>
             <li><a href="#">Gallery</a></li>
           </ul>
+        </nav>
+        <!-- banner -->
+        <div class="heading-wrapper">
+          <h1>Call for proposal</h1>
         </div>
-      </nav>
-      <!-- banner center -->
-      <div>
-        <h2 class="text-secondary">Call for Proposals</h2>
       </div>
     </header>
     <main>

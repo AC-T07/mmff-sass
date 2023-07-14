@@ -1,3 +1,5 @@
+@import "./global.css";
+
 :root {
   /* global colour set up */
   --primary-color: #484ca0;
@@ -75,6 +77,7 @@ section.mission {
 
 /* sets text below the fullwidth image that escapes the container */
 section.mission p {
+  color: var(--light-text);
   margin-top: 100vw;
 }
 
@@ -85,34 +88,6 @@ section.mission p {
 }
 
 /* centers main headings */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  text-align: center;
-  font-weight: normal;
-  margin: 0 0 0 0;
-}
-
-/* heading styles */
-h2 {
-  font-size: 3em;
-  font-weight: normal;
-}
-
-h3 {
-  font-size: 1.9em;
-  font-weight: normal;
-  padding: 0.5em;
-}
-
-p {
-  font-weight: lighter;
-  margin: 0;
-  padding: 1em 0;
-}
 
 /* codepen example */
 
@@ -132,12 +107,6 @@ p {
 
 .text-black {
   color: black;
-}
-nav ul {
-  list-style-type: none;
-  background-color: var(--accent-color);
-  padding: 1em;
-  width: 100%;
 }
 
 /* button icon placeholders */
@@ -430,6 +399,7 @@ header div:nth-child(2) {
   text-align: left;
   border: 2px solid var(--neutral-color);
 }
+/* ---------------------------------------------------- */
 
 iframe {
   width: 100vw;
@@ -528,9 +498,11 @@ footer > :nth-child(4) {
   height: auto;
 }
 @media screen and (min-width: 768px) {
-}
-/* Desktop media query */
-@media screen and (min-width: 992px) {
+  main > * {
+    margin-inline: 2rem;
+  }
+  /* Desktop media query */
+
   .hide-on-mobile {
     display: initial;
   }
@@ -566,8 +538,10 @@ footer > :nth-child(4) {
   /* positions the text for mission  */
   section.mission div.float > :nth-child(3) {
     grid-column: 2;
+    color: var(--light-text);
     grid-row: 2 / span 3;
-    line-height: 300%;
+
+    /* line-height: 300%; */
     padding-left: 1em;
     align-self: flex-start;
   }

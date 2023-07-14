@@ -1,221 +1,218 @@
 /* Root Variables */
+@import "./global.css";
 
 :root {
-	--clr-main: #484ca0;
-	--clr-primary: #f89b21;
-	--clr-secondary: #e49731;
+  --clr-main: #484ca0;
+  --clr-primary: #f89b21;
+  --clr-secondary: #e49731;
 
-	--clr-black: #333333;
-	--clr-white: #f2f2f2;
+  --clr-black: #333333;
+  --clr-white: #f2f2f2;
 
-	--fs-sm: 20px;
-	--fs-md: 24px;
-	--fs-lg: 36px;
-	--fs-xl: 64px;
+  --fs-sm: 20px;
+  --fs-md: 24px;
+  --fs-lg: 36px;
+  --fs-xl: 64px;
 }
 
 /* Imports */
 
-@import url('https://use.typekit.net/lpf4cax.css');
+@import url("https://use.typekit.net/lpf4cax.css");
 
 /* Element Styles */
 
 * {
-	font-family: 'quicksand', sans-serif;
-	font-weight: 400;
-	font-style: normal;
-	font-size: var(--fs-sm);
+  font-family: "quicksand", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: var(--fs-sm);
 }
 
 *,
 *::before,
 *::after {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-	margin: 0;
-	font-family: system-ui;
-	font-size: 1.125rem;
-	line-height: 1.6;
-	background-color: #f5fbff;
+  margin: 0;
+  font-family: system-ui;
+  font-size: 1.125rem;
+  line-height: 1.6;
+  background-color: #f5fbff;
 }
 
 .container {
-	max-width: 91.1875rem;
-	margin-inline: auto;
+  max-width: 91.1875rem;
+  margin-inline: auto;
 }
 
 img {
-	max-width: 100%;
-	display: block;
+  max-width: 100%;
+  display: block;
 }
 
 h1 {
-	color: var(--clr-primary);
-	font-size: var(--fs-xl);
-	font-weight: bold;
+  color: var(--clr-primary);
+  font-size: var(--fs-xl);
+  font-weight: bold;
 }
 
 h2 {
-	color: var(--clr-white);
-	font-size: var(--fs-lg);
+  color: var(--clr-white);
+  font-size: var(--fs-lg);
 }
 
 h3 {
-	color: var(--clr-white);
-	font-size: var(--fs-md);
+  color: var(--clr-white);
+  font-size: var(--fs-md);
 }
 
 p {
-	text-wrap: balance;
-	flex-wrap: wrap;
-	color: var(--clr-white);
+  text-wrap: balance;
+  flex-wrap: wrap;
+  color: var(--clr-white);
 }
 
 section a {
-	color: var(--clr-primary);
+  color: var(--clr-primary);
 }
-
-nav {
-	background-color: #00000060;
-	padding: 5px;
-	margin-bottom: 90px;
+/* ------------------------------------------- */
+/* nav {
+  background-color: #00000060;
+  padding: 5px;
+  margin-bottom: 90px;
 }
 
 nav ul {
-	padding-right: 50px;
+  padding-right: 50px;
 }
 
 ul {
-	padding: 0;
-	list-style-type: none;
+  padding: 0;
+  list-style-type: none;
 }
 
 a {
-	text-decoration: none;
-	color: var(--clr-white);
+  text-decoration: none;
+  color: var(--clr-white);
 }
-
+/*  */
 header {
-	text-align: center;
-	background-color: var(--clr-main);
-	height: 366px;
-	margin-bottom: 60px;
+  text-align: center;
+  background-color: var(--clr-main);
 }
 
-button {
-	border: none;
-	background-color: var(--clr-main);
-	color: var(--clr-white);
-	border-radius: 25px;
-	width: 200px;
-	height: 60px;
-	transition: ease-in-out;
-	transition-duration: 200ms;
+/* button {
+  border: none;
+  background-color: var(--clr-main);
+  color: var(--clr-white);
+  border-radius: 25px;
+  width: 200px;
+  height: 60px;
+  transition: ease-in-out;
+  transition-duration: 200ms;
 }
 
 button:hover {
-	background-color: var(--clr-white);
-	color: var(--clr-main);
-	box-shadow: 0 0 30px var(--clr-main);
-}
+  background-color: var(--clr-white);
+  color: var(--clr-main);
+  box-shadow: 0 0 30px var(--clr-main);
+} */
 
 .container {
-	/* max-width: 91.1875rem; */
-	/* max-width: 86.8125em; */
-	max-width: 90%;
-	margin-inline: auto;
+  /* max-width: 91.1875rem; */
+  /* max-width: 86.8125em; */
+  max-width: 90%;
+  margin-inline: auto;
 }
 
 .nav-flex {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 .gallery-container {
-	background-color: var(--clr-main);
-	border-radius: 50px;
-	padding: 60px;
-	margin-bottom: 60px;
+  background-color: var(--clr-main);
+  border-radius: 50px;
+  padding: 60px;
+  margin-bottom: 60px;
 }
 
 .photo-grid {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	align-content: stretch;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: stretch;
 }
 
 .photo-item {
-	flex-basis: calc(20% - 10px);
-	margin-bottom: 10px;
+  flex-basis: calc(20% - 10px);
+  margin-bottom: 10px;
 }
 
 .photo-item img {
-	width: 100%;
-	height: 300px;
-	object-fit: cover;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
 }
 /* Styles for the 2x2 grid layout */
 .video-grid {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .video-item {
-	flex-basis: calc(
-		45% - 10px
-	); /* Adjust the width and gap between grid items */
-	margin-bottom: 20px; /* Adjust the vertical gap between grid items */
+  flex-basis: calc(
+    45% - 10px
+  ); /* Adjust the width and gap between grid items */
+  margin-bottom: 20px; /* Adjust the vertical gap between grid items */
 }
 
 .video-item iframe {
-	width: 100%;
-	height: 400px;
+  width: 100%;
+  height: 400px;
 }
 
 /* Media query for screens smaller than 768px */
 @media (max-width: 768px) {
-	.photo-item {
-		flex-basis: calc(
-			50% - 10px
-		); /* Adjust the width and gap between photos */
-	}
-	.photo-item img {
-		height: 200px;
-	}
+  .photo-item {
+    flex-basis: calc(50% - 10px); /* Adjust the width and gap between photos */
+  }
+  .photo-item img {
+    height: 200px;
+  }
 }
 
 /* Media query for screens smaller than 480px */
 @media (max-width: 480px) {
-	.photo-item {
-		flex-basis: 100%; /* Each photo takes up the full width */
-	}
+  .photo-item {
+    flex-basis: 100%; /* Each photo takes up the full width */
+  }
 }
 
 footer {
-	background-color: var(--clr-main);
-	padding: 60px;
+  background-color: var(--clr-main);
+  padding: 60px;
 }
 
 footer p {
-	text-align: center;
+  text-align: center;
 }
 
 footer ul {
-	margin-bottom: 60px;
+  margin-bottom: 60px;
 }
 
 .footer-grid {
-	display: grid;
-	grid-template-columns: 2fr 1fr 1fr 1fr;
-	grid-gap: 80px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  grid-gap: 80px;
 }
 
 footer a {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }

@@ -126,7 +126,7 @@ span {
 p,
 th,
 td {
-  font-weight: 600;
+  font-weight: 400;
   line-height: 2.2rem;
   font-size: var(--text-font-size);
   color: var(--text-color);

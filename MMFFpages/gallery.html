@@ -5,25 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MMFF - Gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="../MMFFcss/gallery.css" />
+    <link rel="stylesheet" href="../MMFFcss/globalMediaqueries.css" />
   </head>
   <body>
     <!-- header banner -->
     <header>
       <!-- navigation -->
-      <nav>
-        <ul class="nav-flex">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">News</a></li>
-          <li><a href="#">Schedule</a></li>
-          <li><a href="#">Tickets & Passes</a></li>
-          <li><a href="#">Submissions</a></li>
-          <li><a href="#">Call for Proposals</a></li>
-          <li><a href="#">Gallery</a></li>
-        </ul>
-      </nav>
-      <h1>Gallery</h1>
+      <div class="navigation">
+        <button class="menu-button toggle" data-toggle="false">Menu▼</button>
+        <nav>
+          <ul class="navigation-container" data-expended="false">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Schedule</a></li>
+            <li><a href="#">Tickets & Passes</a></li>
+            <li><a href="#">Submissions</a></li>
+            <li><a href="#">Call for Proposals</a></li>
+            <li><a href="#">Gallery</a></li>
+          </ul>
+        </nav>
+        <!-- banner -->
+        <div class="heading-wrapper">
+          <h1>Tickets & Passes</h1>
+        </div>
+      </div>
     </header>
     <main>
       <div class="container">
