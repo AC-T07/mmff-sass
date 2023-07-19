@@ -1,56 +1,47 @@
-$background-color: #484ca0;
-$container-color: #5859c9;
-$title-color: #f89b21;
-$text-color: black;
-$light-text: #e8e8e8;
-$hover-effect: #d8e990;
-
-$title-font-size: 4rem;
-$second-font-size: 2.5rem;
-$third-font-size: 2rem;
-$text-font-size: $font-size-sm;
-
-$items-spacing: 1rem;
-$text-spacing: 1rem;
-$text-space: 1rem;
-
-$section-fee-color: #5859c9;
+@import "../variables";
+@import "../breakpoints";
 /* ---------------------- */
-
-/* startfrom the same code */
-/* ---------submission page------------- */
+/* startfrom the same code */ /* ---------submission page------------- */
 .wrapper > * {
-  padding: $items-spacing;
+  padding: 2rem;
   /* -------space for illustration------------------ */
-  padding-block: 7rem;
 }
 .wrapper > *:nth-child(odd) {
-  background-color: $container-color;
+  background-color: $main;
 }
 .wrapper > *:nth-child(even) {
-  background-color: $light-text;
+  background-color: $theme-white;
 }
 
 .submission {
-  $hight-light-color: #f89b21;
-  $text-space: 2rem;
-  $section-fee-color: $light-text;
+  h2 {
+    font-size: $font-size-xl;
+  }
+  h3 {
+    font-size: $font-size-lg;
+  }
+  h4 {
+    font-size: $font-size-sm;
+  }
 }
 
 .section-media {
   display: grid;
   grid-template-columns: 1fr;
-  background-color: $container-color;
-  $text-color: #ececec;
+  background-color: $main;
   p {
-    color: $text-color;
+    color: $theme-white;
+  }
+  h2,
+  h3 {
+    color: $primary;
   }
 }
 
 .section-media-platforms {
   $image-ratio: (20, 7);
   $image-width: 80%;
-  // $backgrgound: $light-text;
+  // $backgrgound: $theme-white;
   $image-space: 1.5rem;
 }
 .section-media-platforms > *:nth-last-child(1) {
@@ -58,7 +49,7 @@ $section-fee-color: #5859c9;
 }
 
 img {
-  background-color: $light-text;
+  background-color: $theme-white;
   display: block;
   padding: 1rem;
   margin: auto;
@@ -70,7 +61,7 @@ img {
 }
 
 .section-media-text > * {
-  margin-block: $text-space;
+  margin-block: $base-padding;
 }
 /* ------ section-----fee--------------- */
 
@@ -83,66 +74,58 @@ img {
 }
 
 .section-fee {
-  $section-fee-color: $light-text;
   display: grid;
   grid-template-columns: 1fr;
   justify-content: center;
-  /* flex-direction: column; */
   align-items: center;
-  --text-color: rgb(0, 0, 0);
-  background-color: $section-fee-color;
+  background-color: $theme-white;
   /* text-align: left; */
 }
 
 .section-fee > * {
-  margin-bottom: 1.5rem;
+  margin-bottom: $base-margin;
 }
 
 .section-fee h3 {
   text-align: left;
-  color: $background-color;
+  color: $primary;
 }
 
 .section-fee h2 {
   /* text-align: right; */
-  color: $background-color;
-}
-
-.section-fee h4 {
-  font-size: 1.5rem;
+  color: $primary;
 }
 
 .section-fee-content_caveat > * {
-  margin-block: $text-space;
+  margin-block: $base-margin;
 }
 .section-fee-content table {
-  margin-block: $text-space;
+  margin-block: $base-margin;
   text-align: left;
 }
 /* -------------------- */
 .submission-detail {
-  /* padding: 0; */
   $image-ratio: (55, 40);
   $image-width: 100%;
-  background-color: $container-color;
+  background-color: $main;
   color: white;
   p {
-    color: $light-text;
+    color: $theme-white;
   }
 }
 
 .submission-detail img {
   padding: 0;
-  padding-bottom: 2rem;
+  padding-bottom: $base-margin;
 }
 
 .submission-detail h4 {
-  color: $title-color;
+  color: $primary;
 }
 
 .submission-detail-content_1 > *:nth-child(even),
 .submission-detail-content_2 > *:nth-child(even) {
-  padding-bottom: 2rem;
+  padding-bottom: $base-margin;
 }
 
 .submission-detail-content {
@@ -182,6 +165,10 @@ img {
 /* ---------rule---------------- */
 .rule {
   display: grid;
+  span {
+    color: $primary;
+    font-size: $font-size-lg;
+  }
 }
 
 .rule-content p span {
@@ -193,23 +180,11 @@ img {
 }
 
 .rule-content > *:not(:nth-child(1)) {
-  margin-block: $items-spacing;
+  margin-block: $base-padding;
 }
+// ---------------------------------------------
 
-footer {
-  background-color: $background-color;
-  text-align: center;
-  color: white;
-}
-footer > * {
-  padding-block: rem;
-}
-
-footer img {
-  aspect-ratio: 82/36;
-  width: 20rem;
-}
-
+// --------------------------
 .involved-list,
 .involved-list {
   display: none;
@@ -217,8 +192,6 @@ footer img {
 
 /* ----------------------media queries--------------------------- */
 @media only screen and (min-width: 767px) {
-  $column-gap: 2rem;
-
   /* ---------------navigation-------------------- */
 
   /* ---------------------------------- */
@@ -240,7 +213,7 @@ footer img {
   .section-media {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 10% 90%;
-    column-gap: $column-gap;
+    column-gap: $base-margin;
   }
   .section-media h2 {
     grid-column: 1 / span 2;
@@ -268,8 +241,9 @@ footer img {
   /* ---------Fee--Deadline----------- */
   .section-fee {
     grid-template-columns: 1fr 1fr;
+    background-color: $theme-white;
     grid-template-rows: 12% 58% 30%;
-    column-gap: $column-gap;
+    column-gap: $base-margin;
   }
   .section-fee-heading {
     justify-self: start;
@@ -306,11 +280,10 @@ footer img {
   }
   /* -----------rule------------------ */
   .rule {
-    $section-fee-color: $light-text;
-    background-color: $section-fee-color;
+    background-color: $theme-white;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 5% 60% 35%;
-    column-gap: $column-gap;
+    column-gap: $base-margin;
     padding-bottom: 3rem;
   }
   .rule-heading {
@@ -354,15 +327,15 @@ footer img {
     width: 20rem !important;
   }
   .press-page {
-    margin-inline: $items-spacing;
+    margin-inline: $base-padding;
   }
 }
 .press-heading {
   text-align: center;
 }
 .press-page {
-  /* margin-inline: $items-spacing); */
-  background-color: $container-color;
+  /* margin-inline: $base-padding); */
+  background-color: $main;
   padding: 2rem;
   border-radius: 5rem;
 }

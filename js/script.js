@@ -1,6 +1,7 @@
 const navbar = document.querySelector(".navigation-container");
 const toggle = document.querySelector(".toggle");
 toggle.addEventListener("click", function (e) {
+  console.log(e);
   e.preventDefault();
   const check = toggle.getAttribute("data-toggle");
   if (check == "false") {
@@ -101,3 +102,6 @@ const resize = function () {
 
 resize();
 window.addEventListener("resize", resize);
+// --------------About page carousle------------------------------------------
+const AboutSlide = document.querySelectorAll(".swiper-slide");
+const slidecontainer = document.querySelector(".swiper-wrapper");

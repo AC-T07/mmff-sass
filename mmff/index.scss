@@ -1,21 +1,20 @@
-@import "components/global";
 // variables and functions
 @import "functions";
 @import "variables";
+@import "./font-style";
 
 // base & layout
 @import "base";
 @import "breakpoints";
 @import "grid";
-
 // colors
 @import "colors";
-
 // components (buttons, cards, navbar)
 @import "components/card";
 @import "components/button";
 @import "components/navbar";
-
+@import "components/navigation";
+@import "components/header";
+@import "components/submission";
 // utilities (margin, padding, opacity)
 @import "utilities";
-@import "components/submission";

@@ -1,31 +1,26 @@
 // colours
 $main: #484ca0;
 $primary: #f89b21;
-$secondary: #e49731;
+$secondary: #cbe0ea;
 $theme-white: #f2f2f2;
-$theme-black: #333333;
+$theme-black: #3e3939;
+$highlight: #d8e990;
 
 // color palette
 $colors: (
-    "main": $main,
-    "primary": $primary,
-    "secondary": $secondary,
-    "theme-white": $theme-white,
-    "theme-black": $theme-black,
-    "blue": #1919e6,
-    "red": #e61919,
-    "yellow": #e6e619,
-    "green": #19e635,
-    "orange": #ffa600,
-    "purple": #9900ff,
-    "gray": #808080,
-    "black": black,
-    "white": white,
+  "main": $main,
+  "primary": $primary,
+  "secondary": $secondary,
+  "theme-white": $theme-white,
+  "theme-black": $theme-black,
+  "highlight": $highlight,
+  "black": black,
+  "white": white,
 );
 
 // spacing
-$base-padding: 0.75rem;
-$base-margin: 0.75rem;
+$base-padding: 1rem;
+$base-margin: 1rem;
 
 // borders
 $base-border-thickness: 1px;
@@ -36,7 +31,11 @@ $base-box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
 
 // font sizes
 $base-font-size: 20px;
-$font-size-sm: $base-font-size * 0.75;
-$font-size-lg: $base-font-size * 1.5;
-$font-size-xl: $base-font-size * 2;
-$font-size-xxl: $base-font-size * 3;
+$font-size-xs: $base-font-size * 0.6;
+$font-size-sm: $base-font-size * 0.8;
+$font-size-lg: $base-font-size * 1.2;
+$font-size-xl: $base-font-size * 1.8;
+$font-size-2xl: $base-font-size * 2;
+$font-size-3xl: $base-font-size * 2.4;
+$font-size-4xl: $base-font-size * 3.2;
+$font-size-5xl: $base-font-size * 4.2;

@@ -66,7 +66,9 @@ section {
 
 /* descriptions of team members follows different style than rest of site */
 .team p {
-  width: 50%;
+  margin-block: 1rem;
+  /* width: 50%; */
+  margin-inline: 5%;
   text-align: center;
 }
 
@@ -577,4 +579,48 @@ footer ul.footer-flex li {
 footer a {
   margin: 0;
   padding: 0;
+}
+/* -----------test----------------- */
+
+.swiper-container {
+  height: 100rem;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  height: 90rem;
+  width: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em;
+  background-color: white;
+}
+@media only screen and (width > 568px) {
+  .swiper-slide {
+    width: 50%;
+  }
+}
+@media only screen and (width > 768px) {
+  .swiper-slide {
+    width: 45%;
+  }
+}
+@media only screen and (width > 1024px) {
+  .swiper-slide {
+    width: 25%;
+  }
+}
+
+.swiper-slide img {
+  border: 0.5em solid white;
+  filter: drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.3));
 }
