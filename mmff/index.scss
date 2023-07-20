@@ -7,14 +7,18 @@
 @import 'breakpoints';
 @import 'grid';
 
-// colors 
+// colors & font-sizes
 @import 'colors';
+@import 'font-style';
 
-// components (buttons, cards, navbar)
+// components (buttons, cards, navbar, header, footer)
 @import 'components/card';
 @import 'components/button';
-@import 'components/navbar';
+@import 'components/ticket';
 @import 'components/header';
+@import 'components/navigation';
+@import 'components/footer';
+@import 'components/contact';
 
 
 // utilities (margin, padding, opacity)
