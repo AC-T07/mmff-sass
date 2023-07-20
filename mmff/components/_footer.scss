@@ -27,6 +27,7 @@ footer {
     }
 
     .footer-links {
+        color: white;
         margin: $base-margin * 0.75;
         &:hover {
         text-decoration: none;    
@@ -52,6 +53,7 @@ footer {
     }
 
     .footer-copyright a {
+        font-weight: normal;
         text-decoration: underline;
     }
 
