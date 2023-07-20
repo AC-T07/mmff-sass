@@ -8,6 +8,7 @@
 
     h2 {
         font-size: $font-size-xl;
+        line-height: $font-size-3xl;
         font-weight: bold;
     }
 
@@ -21,10 +22,16 @@
         font-weight: bold;
     }
 
-    p, a {
+    p, button {
         font-size: $font-size-sm;
         line-height: $base-font-size;
         font-weight: normal;
+    }
+
+    a {
+        font-size: $font-size-sm;
+        line-height: $base-font-size;
+        font-weight: bold;
     }
 
 }
@@ -47,7 +54,7 @@
         font-size: $font-size-2xl;
     }
 
-    p, a {
+    p, a, button {
         font-size: $base-font-size;
         line-height: $font-size-lg;
     }
