@@ -2630,15 +2630,15 @@ body {
   width: 100%;
   padding: 1rem;
   font-size: 20px;
+  font-weight: bold;
   border: none;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(23, 17, 17, 0.6);
   color: white;
   cursor: pointer;
 }
 .navigation .navigation-bar {
   display: block;
   position: relative;
-  background-color: #3e3939;
 }
 .navigation .navigation-container {
   width: 100%;
@@ -2651,17 +2651,15 @@ body {
   z-index: 5;
 }
 .navigation .navigation-container > * {
-  width: 100%;
   font-size: 16px;
   list-style-type: none;
   padding-block: 0.7rem;
   text-align: center;
-  background-color: #484ca0;
 }
 .navigation .navigation-container a {
   white-space: nowrap;
   padding: 1rem;
-  font-weight: 500;
+  font-weight: bold;
   font-size: 0.9rem;
   text-decoration: none;
   color: white;
@@ -2674,43 +2672,44 @@ body {
 .navigation .navigation-container[data-expended=true] {
   transform: translateY(0%);
 }
+.navigation .navigation-container a {
+  padding: 0.5rem;
+  font-size: 16px;
+}
 .navigation .navigation-container a:hover,
 .navigation .navigation-container a:focus {
   background-color: #d8e990;
   border-radius: 10rem;
   color: black;
 }
-@media only screen and (width > 767px) {
+@media (min-width: 960px) {
   .navigation {
     /* --------------------------------------------- */
+    position: sticky;
+    top: 0;
+    left: 0;
   }
   .navigation .navigation-button {
     display: none;
   }
   .navigation .navigation-container {
+    background-color: rgba(23, 17, 17, 0.6);
     position: relative;
     flex-direction: row;
-    gap: 2px;
+    justify-content: space-evenly;
+    align-items: center;
   }
   .navigation .navigation-container[data-expended=false] {
     transform: translateY(0%);
   }
-  .navigation .navigation-container li {
-    background-color: #484ca0;
-  }
   .navigation .navigation-container a {
     padding: 0.5rem;
-    font-size: 12px;
+    font-size: 16px;
   }
 }
-@media only screen and (width > 767px) and (min-width: 960px) {
-  .navigation {
-    font-size: 36px;
-  }
-}
-@media only screen and (width > 767px) and (min-width: 1200px) {
-  .navigation {
-    font-size: 24px;
+@media (min-width: 1200px) {
+  .navigation .navigation-container a {
+    font-size: 20px;
   }
 }
 

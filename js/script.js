@@ -103,5 +103,3 @@ const resize = function () {
 resize();
 window.addEventListener("resize", resize);
 // --------------About page carousle------------------------------------------
-const AboutSlide = document.querySelectorAll(".swiper-slide");
-const slidecontainer = document.querySelector(".swiper-wrapper");
