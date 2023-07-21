@@ -57,8 +57,8 @@ footer {
         text-decoration: underline;
     }
 
-    @include md {
-        padding: ($base-padding * 1.5) ($base-padding * 2.25) ($base-padding * 0.75);
+    @include lg {
+        padding: ($base-padding * 1.5) ($base-padding * 5);
 
         .footer-content {
             display: flex;
@@ -103,9 +103,5 @@ footer {
             order: 2;
         }
     
-    }
-
-    @include lg {
-        padding: ($base-padding * 1.5) ($base-padding * 5) ($base-padding * 0.75);
     }
 }
