@@ -7,7 +7,7 @@
 	  font-size: $base-font-size;
 	  font-weight: bold;
 	  border: none;
-	  background-color: rgba(23, 17, 17, 0.6);
+	  background-color: #2B284A;
 	  color: white;
 	  cursor: pointer;
 	}
@@ -69,16 +69,17 @@
   
 	@include lg {
 	  /* --------------------------------------------- */
-		position: sticky;
+		position: fixed;
 		top: 0;
 		left: 0;
+		width: 100%;
 
 	  .navigation-button {
 		display: none;
 	  }
   
 	  .navigation-container {
-		background-color: rgba(23, 17, 17, 0.6);
+		background-color: #2B284A;
 		position: relative;
 		flex-direction: row;
 		justify-content: space-evenly;
