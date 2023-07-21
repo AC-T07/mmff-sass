@@ -61,10 +61,10 @@
 	  }
   
 	.navigation-container a:hover,
-	.navigation-container a:focus {
+	.navigation-container a:active {
 	  background-color: $highlight;
 	  border-radius: 10rem;
-	  color: black;
+	  color: #2B284A;
 	}
   
 	@include lg {
