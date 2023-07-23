@@ -70,11 +70,11 @@
 
   @include lg {
     /* --------------------------------------------- */
-    position: sticky;
-    top: 0;
-    left: 0;
 
     .navigation-button {
+      display: none;
+    }
+    .toggle {
       display: none;
     }
 
@@ -84,6 +84,10 @@
       flex-direction: row;
       justify-content: space-evenly;
       align-items: center;
+      position: fixed;
+      z-index: 999;
+      top: 0;
+      left: 0;
     }
 
     .navigation-container[data-expended="false"] {

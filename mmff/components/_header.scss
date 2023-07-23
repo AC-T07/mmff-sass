@@ -1,4 +1,6 @@
 @use "sass:math";
+@import "../variables";
+@import "../breakpoints";
 
 .header {
   h1 {

@@ -12,6 +12,40 @@ toggle.addEventListener("click", function (e) {
     toggle.setAttribute("data-toggle", false);
   }
 });
+// -----------------------------------
+var mySwiper = new Swiper(".swiper-container", {
+  loop: true,
+  speed: 1000,
+  autoplay: {
+    delay: 5000,
+  },
+  effect: "coverflow",
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: "auto",
+  coverflowEffect: {
+    rotate: 0,
+    stretch: 80,
+    depth: 500,
+    modifier: 1,
+    slideShadows: false,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
+var swiperContainer = document.querySelector(".swiper-container");
+swiperContainer.addEventListener("click", function (event) {
+  var clickedSlide = event.target.closest(".swiper-slide");
+  if (clickedSlide) {
+    var clickedIndex = Array.from(clickedSlide.parentNode.children).indexOf(
+      clickedSlide
+    );
+    mySwiper.slideTo(clickedIndex);
+  }
+});
 
 // ---------expended------------------------
 // const submissionToggle = document.querySelector(".submission-detail-arrow");

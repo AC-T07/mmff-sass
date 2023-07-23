@@ -1,6 +1,8 @@
 @import "../variables";
 @import "../breakpoints";
 @import "../font-style";
+@import "../base";
+@import "./header";
 /* ---------------------- */
 .submission-page {
   @include md {
@@ -35,9 +37,10 @@
 
   /* startfrom the same code */ /* ---------submission page------------- */
   .wrapper > * {
-    padding: 2rem;
+    padding: 1rem;
     /* -------space for illustration------------------ */
   }
+
   .wrapper > *:nth-child(odd) {
     background-color: $main;
   }
@@ -63,21 +66,23 @@
     $image-width: 80%;
     // $backgrgound: $theme-white;
     $image-space: 1.5rem;
+    .section-media-platforms_images img {
+      width: 100%;
+    }
   }
-  .section-media-platforms > *:nth-last-child(1) {
+  .section-media-platforms > * {
     padding: 2rem;
   }
 
-  img {
-    background-color: $theme-white;
+  .illustration-img {
     display: block;
-    padding: 1rem;
+    padding: 0.5rem;
     margin: auto;
     margin-block: 1.5rem;
     align-self: center;
-    aspect-ratio: 20/7;
+
     object-fit: cover;
-    width: 80%;
+    width: 10%;
   }
 
   .section-media-text > * {
@@ -217,16 +222,15 @@
   /* ----------------------media queries--------------------------- */
   @include md {
     /* ---------------navigation-------------------- */
-
     /* ---------------------------------- */
     section {
       border-radius: 5rem;
     }
     .wrapper > *:not(:nth-last-child(1)) {
-      margin-block: 5rem;
+      margin-block: $base-margin;
     }
     .wrapper > * {
-      padding-inline: 5rem;
+      padding-inline: 3rem;
       /* margin-block: 30rem; */
     }
 
@@ -245,6 +249,7 @@
 
     .section-media-platforms_images {
       display: grid;
+      gap: 1rem;
       grid-template-columns: 1fr 1fr;
     }
 
@@ -256,7 +261,6 @@
     }
     .section-media-platforms img {
       margin: 0;
-      margin-top: 1rem;
     }
     /* --------------------------------- */
     .section-arrow {
@@ -349,7 +353,7 @@
     }
     /* -------media queries-- for illustration-------------------------- */
     .illustration-img {
-      width: 20rem !important;
+      width: 10rem !important;
     }
     .press-page {
       margin-inline: $base-padding;
@@ -390,12 +394,9 @@
 
   /* ------submission -illustraion--------------- */
 
-  .illustration-img {
-    width: 15rem;
-  }
   .section-media_illustration img {
     right: -2vw;
-    top: -23vh;
+    top: -15vh;
     /* z-index: 999; */
   }
   .section-fee_illustration img {
