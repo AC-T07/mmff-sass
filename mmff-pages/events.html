@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Events</title>
-	<link rel="stylesheet" href="../css/index.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.6/css/swiper.css"/>
+    <link rel="stylesheet" href="../css/index.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.6/js/swiper.js"></script>
 	<script defer src="../js/script.js"></script>
+    <title>Events</title>
 </head>
 <body>
     <!-- header banner -->
@@ -34,12 +36,12 @@
 				<h1 class="text-primary">Events</h1>
 			</div>
 		</header>
-        <main>
-            <h2>Local Heroes</h2>
+        <main class="event">
+            <h2 class="text-primary">Local Heroes</h2>
             <section class="event-info">
                 <div class="event-info-img">
-                        <img src="assets/images/china_doll.jpeg" alt="" class="event-header-img">
-                        <img src="assets/images/DARC-webad.jpg" alt="" class="event-poster-img hide-mobile">
+                        <img src="../assets/images/events/china_doll.jpeg" alt="" class="event-header-img">
+                        <img src="../assets/images/events/DARC-webad.jpg" alt="" class="event-poster-img hide-mobile">
                 </div>
                 <div class="event-info-txt">
                     <p>Accessible on our <a href="">online festival platform</a> July 24 &ndash; 25</p>
@@ -48,91 +50,106 @@
                     <p>Local talent and creativity are in the spotlight in this selection of short films from the Ottawa-Gatineau region.</p>
                 </div>
             </section>
-            <section class="event-films">
-                <section class="films-presented">
-                        <div class="film-img">
-                            <img src="assets/images/circular.jpg" alt="">
+            <section>
+                <section class="alternating-sections">
+                        <div>
+                            <img src="../assets/images/events/circular.jpg" alt="">
                         </div>
-                        <div class="film-txt">
-                            <div class="film-title">
+                        <div>
+                            <div>
                                 <h3>Circular</h3>
-                                <p>Hannah Johnston, Canada, 2021, 3 min.<br>North American festival premiere</p>
+                                <p class="subtitle">Hannah Johnston, Canada, 2021, 3 min.<br>North American festival premiere</p>
                             </div>
                             <p>CIRCULAR is an experimental art film exploring the shapes that are so ubiquitous in nature and our human tendency to recreate them. It utilizes kinestasis, a stop motion animation technique, leveraging rapid sequences of imagery to music, all from the public domain.</p>
                         </div>
                 </section>
-                <section class="films-presented">
-                        <div class="film-img">
-                            <img src="assets/images/golden_gourmande.jpg" alt="">
+                <section class="alternating-sections">
+                        <div>
+                            <img src="../assets/images/events/golden_gourmande.jpg" alt="">
                         </div>
-                        <div class="film-txt">
-                            <div class="film-title">
+                        <div>
+                            <div>
                                 <h3>Plumes - Golden Gourmande</h3>
-                                <p>Pixie Cram, Canada, 2020, 3 min.<br>World festival premiere</p>
+                                <p class="subtitle">Pixie Cram, Canada, 2020, 3 min.<br>World festival premiere</p>
                             </div>
                             <p>A music video for GOLDEN GOURMANDE by Plumes. Plumes is Canadian singer-songwriter, Veronica Charnley. Charnley grew up in Ottawa before establishing her musical career in Montréal. She is currently based in Paris, France. The video was partly filmed in Dresden while Plumes was on tour in Germany. The forest shots were taken in the Gatineau Valley of Quebec.</p>
                         </div>
                 </section>
-                <section class="films-presented">
-                        <div class="film-img">
-                            <img src="assets/images/away.jpg" alt="">
+                <section class="alternating-sections">
+                        <div>
+                            <img src="../assets/images/events/away.jpg" alt="">
                         </div>
-                        <div class="film-txt">
-                            <div class="film-title">
+                        <div>
+                            <div>
                                 <h3>Away</h3>
-                                <p>Ludmylla Reis, Canada, 2020, 6 min.</p>
+                                <p class="subtitle">Ludmylla Reis, Canada, 2020, 6 min.</p>
                             </div>
                             <p>AWAY is an epistolary poetic film that navigates the inner thoughts of an applicant’s last half of a two-year process for a residency visa in Canada. This long and tumultuous journey that can take at least 24 months from the application date demands a high level of resilience, as it imposes dramatic waves of anxiety and loneliness to the individuals.</p>
                         </div>
                 </section>
-                <section class="films-presented">
-                        <div class="film-img">
-                            <img src="assets/images/curbside_pickup.jpg" alt="">
+                <section class="alternating-sections">
+                        <div>
+                            <img src="../assets/images/events/curbside_pickup.jpg" alt="">
                         </div>
-                        <div class="film-txt">
-                            <div class="film-title">
+                        <div>
+                            <div>
                                 <h3>Curbside Pickup</h3>
-                                <p>Hingman Leung, Canada, 2020, 7 min.</p>
+                                <p class="subtitle">Hingman Leung, Canada, 2020, 7 min.</p>
                             </div>
                             <p>What if the hardest thing about dating during the pandemic, isn’t the pandemic?</p>
                         </div>
                 </section>
             </section>
-            <section class="event-video">
+            <section class="event-video bg-main">
                 <div>
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/HTJpbKuM_K8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  
                 </div>
 
-                <p>Video description.</p>
+                <p class="text-white">Video description.</p>
             </section>
             <section class="event-director">
-                <h3>Directors</h3>
-                <div class="director-bio">
-                    <div class="director-img">
-                        <img src="assets/images/kimberly_sunstrum.jpg" alt="">
+                <h3 class="text-primary">Directors</h3>
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="card-2">
+                                <div>
+                                    <img src="../assets/images/events/kimberly_sunstrum.jpg" alt="">
+                                </div>
+                                <div>
+                                    <div class="card-title">
+                                        <h4>Kimberly Sunstrum</h4>
+                                    </div>
+                                    <p>Kimberly Sunstrum (she/they) is a queer, Motswana Canadian musician, singer-songwriter and producer based in Ottawa. Blending profound vocals with heartfelt lyrics, Sunstrum’s music delves into topics that are reflections of her life. Constant themes in her songs range from race, family and feminism to queerness and the ways these multidimensional identities influence how we navigate the world. Kimberly Sunstrum writes about the world as they see it with an eloquent poetry and grace.</p>
+                                    <br>
+                                    <p>Artist photos by Adrienne Row-Smith.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card-2">
+                                <div>
+                                    <img src="../assets/images/events/hingman_leung.jpg" alt="">
+                                </div>
+                                <div>
+                                    <div class="card-title">
+                                        <h4>Hingman Leung</h4>
+                                    </div>
+                                    <p>Hingman Leung (she/her) is an independent filmmaker based in Ottawa. Having immigrated to Canada from Hong Kong at age 10, her work tends to explore hyphenated identities and spaces in-between. Her early film work includes No Doggy Bag Please, a 2015 short documentary about food waste in China which received the Public Ethnography Award from Royal Roads University and screened internationally. Since dipping into narrative filmmaking in 2018, she has continued to build on her storytelling craft and finding her voice as a director. In 2021, her experimental genre-bending short film Curbside Pickup was officially selected to multiple Canadian film festivals, including Inside Out Toronto.</p>
+                                    <br>
+                                    <p>Artist photos by Adrienne Row-Smith.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="director-txt">
-                        <h4>Kimberly Sunstrum</h4>
-                        <p>Kimberly Sunstrum (she/they) is a queer, Motswana Canadian musician, singer-songwriter and producer based in Ottawa. Blending profound vocals with heartfelt lyrics, Sunstrum’s music delves into topics that are reflections of her life. Constant themes in her songs range from race, family and feminism to queerness and the ways these multidimensional identities influence how we navigate the world. Kimberly Sunstrum writes about the world as they see it with an eloquent poetry and grace.</p>
-                        <br>
-                        <p>Artist photos by Adrienne Row-Smith.</p>
-                    </div>
-                </div>
-                <div class="director-bio">
-                    <div class="director-img">
-                        <img src="assets/images/hingman_leung.jpg" alt="">
-                    </div>
-                    <div class="director-txt">
-                        <h4>Hingman Leung</h4>
-                        <p>Hingman Leung (she/her) is an independent filmmaker based in Ottawa. Having immigrated to Canada from Hong Kong at age 10, her work tends to explore hyphenated identities and spaces in-between. Her early film work includes No Doggy Bag Please, a 2015 short documentary about food waste in China which received the Public Ethnography Award from Royal Roads University and screened internationally. Since dipping into narrative filmmaking in 2018, she has continued to build on her storytelling craft and finding her voice as a director. In 2021, her experimental genre-bending short film Curbside Pickup was officially selected to multiple Canadian film festivals, including Inside Out Toronto.</p>
-                        <br>
-                        <p>Artist photos by Adrienne Row-Smith.</p>
-                    </div>
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                 </div>
             </section>
             <section>
                 <div class="poster-img hide-desktop">
-                    <img src="assets/images/DARC-webad.jpg" alt="">
+                    <img src="../assets/images/events/DARC-webad.jpg" alt="">
                 </div>
             </section>
         </main>
