@@ -2,9 +2,10 @@
 @import url('https://use.typekit.net/lpf4cax.css');
 
 // reset styles
-* {
+*, html {
 	color: inherit;
 	margin: 0;
+	font-size: $base-font-size;
 }
 
 body {

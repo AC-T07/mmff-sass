@@ -1,7 +1,8 @@
 @import url("https://use.typekit.net/lpf4cax.css");
-* {
+*, html {
   color: inherit;
   margin: 0;
+  font-size: 20px;
 }
 
 body {
