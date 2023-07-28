@@ -1,6 +1,6 @@
 @use 'sass:math';
 
-.swiper {
+.swiper, .swiper2 {
 	overflow: hidden;
 	margin: 1.5rem 0 2rem;
 
@@ -67,7 +67,7 @@
 	}
 	
 	img {
-		aspect-ratio: 284/242;
+		aspect-ratio: 360/282;
 		object-fit: cover;
 		object-position: 0 0;
 		width: 100%;

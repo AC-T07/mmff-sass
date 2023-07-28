@@ -66,8 +66,30 @@
     }
 }
 
-.cfp-past-performances {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+.cfp-past-performances>div {
+
+    @include md {
+        margin: 0 4rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 3rem;
+
+        h3 {
+            font-size: $font-size-lg;
+            line-height: $font-size-xl;
+        }
+
+        .card-1 {
+            width: 360px;
+            height: 384px;
+
+            .card-title {
+                text-align: center;
+                padding: 0 1.5rem 1rem;
+            }
+        } 
+    }
+    
 }
