@@ -1,0 +1,18 @@
+.about {
+    >h3 {
+        text-align: center;
+    }
+
+    .btn-container {
+        width: 100%;
+        text-align: center;
+        margin: 1rem 0 0;
+    }
+
+    @include md {
+        .btn-container {
+            text-align: right;
+            margin: 2rem 0 0;
+        }
+    }
+}

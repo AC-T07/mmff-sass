@@ -1,0 +1,13 @@
+@use 'sass:math';
+
+.header {
+
+    h1 {
+        text-align: center;
+        padding: ($base-padding * 4) 0;
+
+        @include md {
+            padding: ($base-padding * 6) 0;
+        }
+    }
+}
