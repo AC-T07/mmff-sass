@@ -17,7 +17,18 @@
 
   .awards-wrapper > *:nth-child(odd) {
     background-color: $main;
-    color: white;
+    h3 {
+      color: $primary;
+    }
+
+    span {
+      color: $primary;
+    }
+
+    p {
+      color: white;
+      padding-block: $base-padding;
+    }
   }
   /* .awards-wrapper > *:nth-child(odd) h3 {
           text-align: right;
@@ -25,6 +36,16 @@
 
   .awards-wrapper > *:nth-child(even) {
     background-color: white;
+    h3 {
+      color: $main;
+    }
+    span {
+      color: $primary;
+    }
+    p {
+      color: black;
+      padding-block: $base-padding;
+    }
   }
   @include md {
     h3 {

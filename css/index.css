@@ -3222,11 +3222,6 @@ body {
   /* ------submission -illustraion--------------- */
 }
 @media (min-width: 720px) {
-  .submission-page h1 {
-    font-size: 48px;
-    line-height: 48px;
-    font-weight: bold;
-  }
   .submission-page h2 {
     font-size: 36px;
     font-weight: bold;
@@ -4213,10 +4208,29 @@ body {
 }
 .awards .awards-wrapper > *:nth-child(odd) {
   background-color: #484ca0;
+}
+.awards .awards-wrapper > *:nth-child(odd) h3 {
+  color: #f89b21;
+}
+.awards .awards-wrapper > *:nth-child(odd) span {
+  color: #f89b21;
+}
+.awards .awards-wrapper > *:nth-child(odd) p {
   color: white;
+  padding-block: 1rem;
 }
 .awards .awards-wrapper > *:nth-child(even) {
   background-color: white;
+}
+.awards .awards-wrapper > *:nth-child(even) h3 {
+  color: #484ca0;
+}
+.awards .awards-wrapper > *:nth-child(even) span {
+  color: #f89b21;
+}
+.awards .awards-wrapper > *:nth-child(even) p {
+  color: black;
+  padding-block: 1rem;
 }
 @media (min-width: 720px) {
   .awards h3 {

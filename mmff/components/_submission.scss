@@ -6,12 +6,6 @@
 /* ---------------------- */
 .submission-page {
   @include md {
-    h1 {
-      font-size: $font-size-3xl;
-      line-height: $font-size-3xl;
-      font-weight: bold;
-    }
-
     h2 {
       font-size: $font-size-xl;
       font-weight: bold;
