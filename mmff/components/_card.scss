@@ -1,22 +1,164 @@
-@use 'sass:math';
+@use "sass:math";
 
-.card {
-	display: block;
-	padding: $base-padding;
-	border: $base-border-thickness solid #eee;
-	box-shadow: $base-box-shadow;
-    border-radius: math.div($base-border-radius, 4);
+.swiper,
+.swiper2 {
+  overflow: hidden;
+  margin: 1.5rem 0 2rem;
 
-	.card-title {
-		font-size: $font-size-lg;
-		padding-bottom: $base-padding;
-		font-weight: bold;
-	}
-	.card-body {
-		font-size: $base-font-size;
+  @include md {
+    margin: 2rem 0 3rem;
+  }
 
-		a {
-			text-decoration: underline;
-		}
-	}
+  @include lg {
+    margin: 2rem 0 5rem;
+  }
+}
+
+.swiper-slide {
+  width: 80%;
+  border-radius: 40px;
+}
+
+.swiper-button-prev {
+  width: 44px;
+  height: 44px;
+  background-size: 44px;
+  background-image: url(../../assets/images/swiper-button-prev.png);
+
+  @include md {
+    width: 60px;
+    height: 60px;
+    background-size: 60px;
+  }
+
+  @include lg {
+    margin-left: 3rem;
+  }
+}
+
+.swiper-button-next {
+  width: 44px;
+  height: 44px;
+  background-size: 44px;
+  background-image: url(../../assets/images/swiper-button-next.png);
+
+  @include md {
+    width: 60px;
+    height: 60px;
+    background-size: 60px;
+  }
+
+  @include lg {
+    margin-right: 3rem;
+  }
+}
+
+.card-1 {
+  margin: 0;
+  height: min-content;
+  border-radius: 40px;
+  background-color: $main;
+
+  h2,
+  h3,
+  h4,
+  h5 {
+    color: $primary;
+  }
+
+  .card-title {
+    padding: 0 1rem 1rem;
+  }
+
+  img {
+    aspect-ratio: 360/282;
+    object-fit: cover;
+    object-position: 0 0;
+    width: 100%;
+    border-radius: 40px 40px 0 0;
+  }
+
+  > div:first-child {
+    margin: 0;
+  }
+
+  @include md {
+    .card-title {
+      padding: 1rem 2rem 2rem;
+    }
+  }
+}
+
+.card-2 {
+  margin: 0;
+  height: min-content;
+  padding: 2rem;
+  border-radius: 40px;
+  background-color: $theme-black;
+
+  p {
+    color: #fff;
+  }
+
+  h4,
+  h5,
+  h2 {
+    color: $primary;
+  }
+
+  .card-title {
+    margin: 0.75rem 0 0.5rem;
+  }
+
+  img {
+    width: 100%;
+    border-radius: 40px;
+  }
+
+  > div:first-child {
+    margin: 0 1rem;
+  }
+
+  @include md {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    .card-title {
+      margin: 1rem 0;
+    }
+
+    & > div:first-child {
+      margin: 0;
+    }
+
+    > div {
+      width: 100%;
+    }
+
+    img {
+      border-radius: 60px;
+      width: 100%;
+    }
+  }
+
+  @include lg {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 65px;
+
+    &:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+
+    img {
+      aspect-ratio: 470/353;
+      object-fit: cover;
+      object-position: 0 0;
+      border-radius: 80px;
+    }
+  }
 }

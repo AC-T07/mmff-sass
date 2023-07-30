@@ -13,39 +13,39 @@ toggle.addEventListener("click", function (e) {
   }
 });
 // -----------------------------------
-var mySwiper = new Swiper(".swiper-container", {
-  loop: true,
-  speed: 1000,
-  autoplay: {
-    delay: 5000,
-  },
-  effect: "coverflow",
-  grabCursor: true,
-  centeredSlides: true,
-  slidesPerView: "auto",
-  coverflowEffect: {
-    rotate: 0,
-    stretch: 80,
-    depth: 500,
-    modifier: 1,
-    slideShadows: false,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
+// var mySwiper = new Swiper(".swiper-container", {
+//   loop: true,
+//   speed: 1000,
+//   autoplay: {
+//     delay: 5000,
+//   },
+//   effect: "coverflow",
+//   grabCursor: true,
+//   centeredSlides: true,
+//   slidesPerView: "auto",
+//   coverflowEffect: {
+//     rotate: 0,
+//     stretch: 80,
+//     depth: 500,
+//     modifier: 1,
+//     slideShadows: false,
+//   },
+//   navigation: {
+//     nextEl: ".swiper-button-next",
+//     prevEl: ".swiper-button-prev",
+//   },
+// });
 
-var swiperContainer = document.querySelector(".swiper-container");
-swiperContainer.addEventListener("click", function (event) {
-  var clickedSlide = event.target.closest(".swiper-slide");
-  if (clickedSlide) {
-    var clickedIndex = Array.from(clickedSlide.parentNode.children).indexOf(
-      clickedSlide
-    );
-    mySwiper.slideTo(clickedIndex);
-  }
-});
+// var swiperContainer = document.querySelector(".swiper-container");
+// swiperContainer.addEventListener("click", function (event) {
+//   var clickedSlide = event.target.closest(".swiper-slide");
+//   if (clickedSlide) {
+//     var clickedIndex = Array.from(clickedSlide.parentNode.children).indexOf(
+//       clickedSlide
+//     );
+//     mySwiper.slideTo(clickedIndex);
+//   }
+// });
 
 // ---------expended------------------------
 // const submissionToggle = document.querySelector(".submission-detail-arrow");
@@ -137,3 +137,17 @@ const resize = function () {
 resize();
 window.addEventListener("resize", resize);
 // --------------About page carousle------------------------------------------
+const callforContainer = document.querySelector(".cfp-past-performances");
+const callCard = document.querySelectorAll(".card-1");
+console.log(callforContainer, callCard);
+
+const change = function () {
+  if (window.innerWidth > 720) {
+    console.log("Desktop");
+  }
+  if (window.innerWidth < 720) {
+    console.log("mobile");
+  }
+};
+
+window.addEventListener("resize", change);
