@@ -65,18 +65,6 @@
   }
 }
 
-.cfp-past-performances > * {
-  margin-block: 2rem;
-  display: flex;
-  gap: 1rem;
-  overflow-x: scroll;
-  .card-1 {
-    text-align: center;
-    width: 360px;
-    height: 384px;
-  }
-}
-
 .cfp-past-performances > div {
   @include md {
     margin: 0 4rem;

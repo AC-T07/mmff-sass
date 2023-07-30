@@ -54,3 +54,77 @@
     line-height: $font-size-lg;
   }
 }
+// col classes
+@include sm {
+  h1 {
+    font-size: $font-size-3xl;
+    line-height: $font-size-3xl;
+    font-weight: bold;
+  }
+
+  h2 {
+    font-size: $font-size-xl;
+    line-height: $font-size-2xl;
+    font-weight: bold;
+  }
+
+  h3 {
+    font-size: $font-size-lg;
+    line-height: $font-size-xl;
+    font-weight: bold;
+  }
+
+  h4 {
+    font-size: $base-font-size;
+    line-height: $font-size-lg;
+    font-weight: bold;
+  }
+
+  h5 {
+    font-size: $font-size-sm;
+    line-height: $base-font-size;
+    font-weight: bold;
+  }
+
+  p,
+  button,
+  li {
+    font-size: $font-size-sm;
+    line-height: $base-font-size;
+    font-weight: normal;
+  }
+
+  a {
+    font-size: $font-size-sm;
+    line-height: $base-font-size;
+    font-weight: bold;
+  }
+}
+
+@include md {
+  h1 {
+    font-size: $font-size-5xl;
+    line-height: $font-size-5xl;
+  }
+
+  h2 {
+    font-size: $font-size-4xl;
+    line-height: $font-size-4xl;
+  }
+
+  h3 {
+    font-size: $font-size-3xl;
+    line-height: $font-size-3xl;
+  }
+
+  h4 {
+    font-size: $font-size-2xl;
+    line-height: $font-size-3xl;
+  }
+
+  h5 {
+    font-size: $font-size-lg;
+    line-height: $font-size-xl;
+    font-weight: bold;
+  }
+}

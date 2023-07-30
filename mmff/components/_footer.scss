@@ -27,6 +27,7 @@ footer {
   }
 
   .footer-links {
+    color: white;
     margin: $base-margin * 0.75;
     &:hover {
       text-decoration: none;
@@ -53,11 +54,12 @@ footer {
   }
 
   .footer-copyright a {
+    font-weight: normal;
     text-decoration: underline;
   }
 
-  @include md {
-    padding: ($base-padding * 1.5) ($base-padding * 2.25) ($base-padding * 0.75);
+  @include lg {
+    padding: ($base-padding * 1.5) ($base-padding * 5);
 
     .footer-content {
       display: flex;
@@ -101,9 +103,5 @@ footer {
     .copyright-icon {
       order: 2;
     }
-  }
-
-  @include lg {
-    padding: ($base-padding * 1.5) ($base-padding * 5) ($base-padding * 0.75);
   }
 }

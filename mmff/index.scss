@@ -7,19 +7,33 @@
 @import "base";
 @import "breakpoints";
 @import "grid";
-// colors
+
+// colors & font-sizes
 @import "colors";
-// components (buttons, cards, navbar)
+@import "font-style";
+
+// components (buttons, cards, navbar, header, footer)
 @import "components/card";
 @import "components/button";
-@import "components/navbar";
-@import "components/navigation";
+@import "components/ticket";
 @import "components/header";
+@import "components/navigation";
+@import "components/footer";
+@import "components/contact";
+@import "components/alternating-sections";
+@import "components/events";
+@import "components/call-for-proposal";
+@import "components/get-involved";
+@import "components/about";
 @import "components/submission";
 @import "components/schedule";
 @import "components/press";
 @import "components/awards";
 @import "components/archive";
-@import "components/call-for-proposal";
+
+// colors
+
+// components (buttons, cards, navbar)
+
 // utilities (margin, padding, opacity)
 @import "utilities";

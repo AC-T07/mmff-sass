@@ -1,5 +1,5 @@
 // font import
-@import url("https://use.typekit.net/lpf4cax.css");
+
 @font-face {
   font-family: "Booster Next FY";
   src: url("../assets/fonts/Booster_Next_FY/BoosterNextFY-Regular.otf")
@@ -18,12 +18,13 @@
 
 // reset styles
 * {
+  font-family: "Booster Next FY", sans-serif;
   color: inherit;
   margin: 0;
+  font-size: $base-font-size;
 }
 
 body {
-  font-family: "quicksand", sans-serif;
   font-weight: 400;
   font-style: normal;
   letter-spacing: 1px;
@@ -46,10 +47,6 @@ hr {
 
 img {
   max-width: 100%;
-}
-
-h1 {
-  text-wrap: balance;
 }
 
 body {
