@@ -3318,10 +3318,35 @@ footer .footer-copyright a {
   }
 }
 
-@media (min-width: 720px) {
+.cfp-past-performances > div::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.cfp-past-performances > div {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.cfp-past-performances > div {
+  cursor: grab;
+  margin-block: 2rem;
+  display: flex;
+  gap: 1rem;
+  overflow-x: scroll;
+  padding: 0 1rem;
+}
+.cfp-past-performances > div .card-1 {
+  width: 320px;
+  height: 384px;
+}
+.cfp-past-performances > div .card-1 .card-title {
+  text-align: center;
+  padding: 0 1.5rem 1rem;
+}
+@media (min-width: 960px) {
   .cfp-past-performances > div {
-    margin: 0 4rem;
-    display: flex;
+    padding: 0 4rem;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;

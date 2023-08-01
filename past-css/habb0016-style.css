@@ -1,0 +1,289 @@
+:root {
+	--clr-main: #484ca0;
+	--clr-primary: #f89b21;
+	--clr-secondary: #e49731;
+
+	--clr-black: #333333;
+	--clr-white: #f2f2f2;
+
+    --fs-xxsm: 16px;
+    --fs-xsm: 18px;
+	--fs-sm: 20px;
+	--fs-md: 24px;
+	--fs-lg: 36px;
+	--fs-xl: 64px;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+h2 {
+	color: var(--clr-primary);
+	font-size: var(--fs-lg);
+	font-weight: bold;
+}
+
+h3 {
+	font-size: var(--fs-md);
+	font-weight: bold;
+}
+h4{
+    font-size: var(--fs-sm);
+}
+h5{
+    font-size: var(--fs-xsm);
+}
+
+p {
+	text-wrap: balance;
+	flex-wrap: wrap;
+    font-size: var(--fs-sm);
+}
+
+.carousel {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    gap: 20px; /* Adjust the gap between cards as needed */
+    position: relative; /* Add position relative to enable positioning of the film strip */
+  }
+  
+
+  .card {
+    flex: 0 0 auto;
+    width: 300px; /* Adjust the card width as needed */
+    padding: 20px;
+    background-color: unset;
+    border-radius: 5px;
+    scroll-snap-align: start;
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border: 10px solid white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  
+  
+  .carousel-prev,
+  .carousel-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .carousel-prev {
+    left: 10px;
+  }
+  
+  .carousel-next {
+    right: 10px;
+  }
+
+  /* images that require fullwidth on mobile */
+.mobile-fullwidth{
+    width: 100%;
+    height: 100%;
+    object-fit:  cover;
+    object-position: center center;
+    aspect-ratio: 1;
+  }
+
+  #mission-Section{
+    background-color: #3E3939;
+    color: white;
+    margin-top: 4em;
+  }
+  #mission-Section h2{
+    text-align: left;
+    color: #e49731;
+    padding: 0.5em 1.5em 0 1.5em;
+    text-wrap:balance;
+  }
+  #mission-Section p{
+    color: white;
+    padding: 1em 2.5em;
+    line-height: 250%;
+  }
+  #cfp-carousel h3{
+    text-decoration: underline;
+    text-align: center;
+    color: #484CA0;
+  }
+  #white-center{
+    color: white !important;
+    text-align: center !important;
+    
+  }
+  main.about h3{
+    text-align: center;
+    font-size: 3.5rem;
+    padding: 0;
+    margin: 0.5em auto;
+  }
+  #cfp-cards p:first-child{
+    padding: 1em 2em;
+    color: #484CA0;
+  }
+
+  main.about h4{
+    text-align: center;
+    font-size: var(--fs-lg);
+    padding: 0;
+    margin: 0.5em auto 0 auto;
+  }
+  main.about h5{
+    text-align: center;
+    font-size: var(--fs-md);
+    padding: 0;
+    margin: 0 auto;
+    font-weight: bold;
+  }
+  main.about div div p{
+    text-align: center;
+    line-height: 175%;
+  }
+
+/* gallery on get involved */
+  
+  
+  #cfp-carousel img {
+    object-fit: cover; /* Ensures the image fills the container without distortion */
+    object-position: center center; /* Positions the image at the center */
+    width: 100%; /* Adjust the width as needed */
+    height: 300px;
+  }
+
+  #cfp-carousel>div> img:first-child {
+    object-fit: cover; /* Ensures the image fills the container without distortion */
+    object-position: center right; /* Positions the image at the center */
+    width: 100%; /* Adjust the width as needed */
+    height: 300px;
+  }
+  /* image two on cfp page carousel 1 */
+  #cfp-carousel>div.card:nth-child(3) img {
+    object-fit: cover; /* Ensures the image fills the container without distortion */
+    object-position: -70px 0px; /* Positions the image at the center */
+    width: 100%; /* Adjust the width as needed */
+    height: 300px;
+  }
+
+  #cfp-carousel>div.card:nth-child(4) img {
+    object-fit: cover; /* Ensures the image fills the container without distortion */
+    object-position: -70px 0px; /* Positions the image at the center */
+    width: 100%; /* Adjust the width as needed */
+    height: 300px;
+  }
+  #cfp-carousel>div.card:nth-child(5) img {
+    object-fit: cover; /* Ensures the image fills the container without distortion */
+    object-position: -70px 0px; /* Positions the image at the center */
+    width: 100%; /* Adjust the width as needed */
+    height: 300px;
+  }
+
+
+/* navigation */
+
+  /* get involved page */
+
+/* Footer */
+
+@media screen and (min-width: 992px) {
+    #mission-Section{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto);
+        grid-gap: 0 4rem;
+        padding: 4em;
+      }
+      #mission-Section>:nth-child(1){
+        grid-column: 1;
+        grid-row: 1/span 2;
+        height: auto;
+
+      }
+      #mission-Section>:nth-child(2){
+        grid-column: 2;
+        grid-row: 1;
+        height: 100%;
+        object-fit: contain;
+        align-self: center;
+        height: auto;
+        align-self: end;
+      }
+      #mission-Section>:nth-child(3){
+        grid-column: 2;
+        grid-row: 2;
+       
+      }
+      #mission-Section>:nth-child(4){
+        grid-column: 2;
+        grid-row: 1;
+      }
+      main.about div.card{
+        width: 50vw;
+      }
+      main.about div.card img{
+        width: 300px;
+        margin: 0 34%;
+      } 
+      /* get involved */
+
+      /* call for proposal desktop */
+
+      #cfp-carousel{
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        align-items: center;
+        justify-items: center;
+        margin: 0 auto;
+        grid-gap: 0;
+        width: min-content;
+        }
+        #cfp-carousel div:nth-child(2){
+        grid-column: 1/span 3;
+        grid-row: 1;
+        }
+        #cfp-carousel div:nth-child(3){
+        grid-column: 5/span 3;
+        grid-row: 1;
+        }
+        #cfp-carousel div:nth-child(4){
+        grid-column: 9/span 3;
+        grid-row: 1;
+        }
+        #cfp-carousel div:nth-child(5){
+        grid-column: 3/span 3;
+        grid-row: 2;
+        }
+        #cfp-carousel div:nth-child(6){
+        grid-column: 7/span 3;
+        grid-row: 2;
+        }
+        #cfp-carousel div.film-strip{
+        display: none;
+        }
+        #cfp-cards > div > section{
+        padding-left: 2em;
+        }
+        #cfp-cards > div > section > h2{
+        text-align: left;
+        }
+      
+      /* Footer */
+      
+}

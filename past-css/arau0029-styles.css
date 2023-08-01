@@ -1,0 +1,74 @@
+:root {
+  }
+
+
+/* Global styles */
+
+/* *{
+    outline: 1px solid red !important;
+} */
+
+/* Navigation */
+
+/* Headings */
+
+h2 {
+    text-align: center;
+    margin: 30px 15px 20px;
+}
+
+h3 {
+    text-align: center;
+    margin: 30px 15px 20px;
+}
+
+h4 {
+    text-align: left;
+}
+
+
+/* Contact Page */
+
+/* Tickets & Passes Page */
+
+
+/* Events Page */
+
+/* Footer */
+
+@media screen and (min-width: 768px) {
+
+
+    /* Headings */
+
+    h2 {
+        margin: 80px 15px 50px;
+    }
+    
+    h3 {
+        margin: 60px 15px 50px;
+    }
+
+
+    /* Navigation */
+
+    /* Contact Page */
+    
+
+    /* Tickets & Passes Page */
+
+    /* Events Page */
+
+    /* Footer */
+
+}
+
+@media screen and (min-width: 920px) {
+
+    /* Tickets & Passes Page */
+
+    /* Event Page */
+
+    /* Footer */
+
+}
