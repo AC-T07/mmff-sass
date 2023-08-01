@@ -1,16 +1,23 @@
 // variables and functions
-@import 'functions';
-@import 'variables';
+@import "functions";
+@import "variables";
 
 // base & layout
-@import 'base';
-@import 'breakpoints';
-@import 'grid';
+@import "base";
+@import "breakpoints";
+@import "grid";
 
+// colors
+@import "colors";
 // colors & font-sizes
 @import 'colors';
 @import 'font-style';
 
+// components (buttons, cards, navbar)
+@import "components/card";
+@import "components/button";
+@import "components/navbar";
+@import "components/navigation";
 // components (buttons, cards, navbar, header, footer)
 @import 'components/card';
 @import 'components/button';
@@ -27,6 +34,4 @@
 
 
 // utilities (margin, padding, opacity)
-@import 'utilities';
-
-
+@import "utilities";
