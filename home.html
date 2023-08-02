@@ -8,8 +8,39 @@
 		<link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+		<style>
+			.home-section img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+			.home button {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				gap: 30px;
+				font-weight: bold;
+				border: none;
+				background-color: #484ca0;
+				color: #f2f2f2;
+				border-radius: 50px;
+				width: 300px;
+				height: 60px;
+				transition: ease-in-out;
+				transition-duration: 200ms;
+			}
+
+			.home button:hover {
+				transform: translateY(-2px);
+				box-shadow: 0 0 35px #484ca0;
+			}
+
+			.btn-icon {
+				height: 30px;
+			}
+		</style>
 	</head>
-	<body>
+	<body class="home">
 		<header>
 			<nav class="navbar-main text-white">
 				<div class="container">
@@ -27,7 +58,7 @@
 				<div class="container">
 					<div class="row gap-2 justify-center">
 						<div class="col-12-md col-6-xl">
-							<h1 class="text-primary font-5xl mb-2">
+							<h1 class="text-primary mb-2">
 								Mirror Mountain Film Festival
 							</h1>
 							<h2 class="text-theme-white font-xl">
@@ -62,11 +93,14 @@
 		<main>
 			<div class="container">
 				<section>
-					<div class="bg-theme-black p-2 pr-3 pl-3 br mb-2">
-						<div class="space-between">
-							<h2 class="text-primary font-xl mb-2">News</h2>
-							<button class="btn-main text-theme-white">
-								SEE ALL NEWS
+					<div class="bg-theme-black p-2 br mb-2">
+						<div class="space-between mb-1">
+							<h2 class="text-primary font-xl">News</h2>
+							<button>
+								<img
+									class="btn-icon"
+									src="images/home/news-icon.png"
+									alt="" />SEE ALL NEWS
 							</button>
 						</div>
 						<div class="row gap-2 justify-center">
@@ -119,14 +153,17 @@
 					</div>
 				</section>
 				<section>
-					<div class="bg-theme-white p-2 pr-3 pl-3 br mb-2">
-						<div class="space-between">
-							<h2 class="text-primary font-xl mb-2">Tickets</h2>
-							<button class="btn-main text-theme-white">
-								GO TO TICKETS
+					<div class="bg-theme-white p-2 br mb-2">
+						<div class="space-between mb-1">
+							<h2 class="text-primary font-xl">Tickets</h2>
+							<button>
+								<img
+									class="btn-icon"
+									src="images/home/ticket-icon.png"
+									alt="" />GO TO TICKETS
 							</button>
 						</div>
-						<div class="row justify-center">
+						<div class="row justify-center home-section">
 							<div class="col-12-md col-6-lg">
 								<img
 									class="mb-1"
@@ -141,14 +178,17 @@
 					</div>
 				</section>
 				<section>
-					<div class="bg-theme-black p-2 pr-3 pl-3 br mb-2">
-						<div class="space-between">
-							<h2 class="text-primary font-xl mb-2">Schedule</h2>
-							<button class="btn-main text-theme-white">
-								SEE SCHEDULE
+					<div class="bg-theme-black p-2 br mb-2">
+						<div class="space-between mb-1">
+							<h2 class="text-primary font-xl">Schedule</h2>
+							<button>
+								<img
+									class="btn-icon"
+									src="images/home/schedule-icon.png"
+									alt="" />SEE SCHEDULE
 							</button>
 						</div>
-						<div class="row justify-center">
+						<div class="row justify-center home-section">
 							<div class="col-12-md col-3-lg">
 								<img
 									class="mb-1"
