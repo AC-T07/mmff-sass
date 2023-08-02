@@ -1,0 +1,23 @@
+@media only screen and (width > 767px) {
+  /* --------------------------------------------- */
+  button {
+    display: none;
+  }
+  .navigation-container {
+    position: relative;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .navigation-container[data-expended="false"] {
+    transform: translateY(0%);
+  }
+  .navigation-container li {
+    background-color: rgb(0, 0, 0, 0.5);
+    padding-block: 2rem;
+  }
+  .navigation-container a {
+    font-size: 1.6vw;
+  }
+}

@@ -1,123 +1,122 @@
 .cfp-special-p {
-    margin: 2rem 1rem;
+  margin: 2rem 1rem;
 
-    p {
+  p {
     font-weight: bold;
-    }
+  }
 
-    @include md {
-        margin: 2rem 4rem;
-    }
+  @include md {
+    margin: 2rem 4rem;
+  }
 }
 
 .section-grey {
-    margin: 2rem 0;
-	height: min-content;
-	
-	h2 {
-		margin: 0 0 1rem;
-	}
-	
-	img {
-		width: 100%;
-	}
+  margin: 2rem 0;
+  height: min-content;
 
-    >div:nth-child(2) {
-        padding: 1rem 1rem 2rem;
+  h2 {
+    margin: 0 0 1rem;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  > div:nth-child(2) {
+    padding: 1rem 1rem 2rem;
+  }
+
+  @include md {
+    > div:nth-child(2) {
+      padding: 2rem 4rem 3rem;
+    }
+  }
+
+  @include lg {
+    margin: 4rem;
+    display: flex;
+    border-radius: 40px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 60px;
+    padding: 2rem;
+
+    > div {
+      width: 100%;
     }
 
-	@include md {
-
-		>div:nth-child(2) {
-            padding: 2rem 4rem 3rem;
-        }
-	}
-
-	@include lg {
-        margin: 4rem;
-        display: flex;
-        border-radius: 40px;
-		flex-direction: column;
-		justify-content: center;
-		align-items: flex-start;
-		gap: 60px;
-        padding: 2rem;
-
-        >div {
-			width: 100%;
-		}
-
-        >div:nth-child(2) {
-            padding: 0;
-        }
-	}
-
-    @include xl {
-        flex-direction: row;
-
-        >div:first-child {
-			width: 40%;
-		}
-
-        >div:nth-child(2) {
-            padding: 0;
-            width: 60%;
-        }  
+    > div:nth-child(2) {
+      padding: 0;
     }
+  }
+
+  @include xl {
+    flex-direction: row;
+
+    > div:first-child {
+      width: 40%;
+    }
+
+    > div:nth-child(2) {
+      padding: 0;
+      width: 60%;
+    }
+  }
 }
 
 .cfp-past-performances>div::-webkit-scrollbar {
-    display: none;
-  }
-  
-  /* Hide scrollbar for IE, Edge and Firefox */
-  .cfp-past-performances>div {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
-  }
-  
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.cfp-past-performances>div {
+-ms-overflow-style: none;  /* IE and Edge */
+scrollbar-width: none;  /* Firefox */
+}
+
 
 .cfp-past-performances>div {
-    cursor: grab;
-    margin-block: 2rem;
-    display: flex;
-    gap: 1rem;
-    overflow-x: scroll;
-    padding: 0 1rem;
+margin-block: 2rem;
+display: flex;
+gap: 1rem;
+overflow-x: scroll;
+padding: 0 1rem;
+
+.card-1 {
+    width: 320px;
+    height: 384px;
+
+    .card-title {
+        text-align: center;
+        padding: 0 1.5rem 1rem;
+    }
+}
+
+@include md {
+  h3 {
+        font-size: $font-size-lg;
+        line-height: $font-size-xl;
+    }
+}
+
+@include lg {
+    padding: 0 4rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+
+    
 
     .card-1 {
-        width: 320px;
+        width: 360px;
         height: 384px;
 
         .card-title {
             text-align: center;
             padding: 0 1.5rem 1rem;
         }
-    }
-
-
-
-    @include lg {
-        padding: 0 4rem;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 3rem;
-
-        h3 {
-            font-size: $font-size-lg;
-            line-height: $font-size-xl;
-        }
-
-        .card-1 {
-            width: 360px;
-            height: 384px;
-
-            .card-title {
-                text-align: center;
-                padding: 0 1.5rem 1rem;
-            }
-        } 
-    }
-    
+    } 
+}
 }
