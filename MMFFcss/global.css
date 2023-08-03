@@ -1,0 +1,146 @@
+:root {
+  /* color */
+  --background-color: #484ca0;
+  --container-color: #5859c9;
+  --title-color: #f89b21;
+  --text-color: black;
+  --light-text: #e8e8e8;
+  --hover-effect: #d8e990;
+  /* ------font-size-------- */
+  --title-font-size: 4rem;
+  --second-font-size: 2.5rem;
+  --third-font-size: 2rem;
+  --text-font-size: 1.6rem;
+  /* ---------item-spacing--------------- */
+  --items-spacing: 1rem;
+  --text-spacing: 1rem;
+  /* ---------------------- */
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 1px solid red;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Quicksand", sans-serif;
+  box-sizing: inherit;
+}
+/* --------elements-------------- */
+/* -------------navigation------------- */
+nav {
+  display: block;
+  position: relative;
+  background-color: rgba(23, 18, 18, 0.46);
+}
+.navigation-container {
+  width: 100%;
+  background-color: var(--background-color);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  transition: all 500ms ease-in-out;
+  /* justify-content: space-evenly; */
+  align-items: center;
+  list-style-type: none;
+  z-index: 5;
+}
+
+.navigation-container > * {
+  width: 100%;
+  font-size: var(--text-font-size);
+  list-style-type: none;
+  padding-block: 1.5rem;
+  text-align: center;
+  background-color: var(--container-color);
+}
+.navigation-container a {
+  white-space: nowrap;
+  padding: 1rem;
+  font-weight: 500;
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  transition: all 400ms ease-out;
+}
+
+.navigation-container[data-expended="false"] {
+  transform: translateY(-150%);
+}
+.navigation-container[data-expended="true"] {
+  transform: translateY(0%);
+}
+
+.navigation-container a:hover,
+.navigation-container a:focus {
+  background-color: var(--hover-effect);
+  border-radius: 10rem;
+  color: black;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 800;
+  padding-block: 0.5rem;
+}
+
+h1 {
+  color: var(--title-color);
+  font-weight: 400;
+  padding: 7rem;
+  padding-block-end: 12rem;
+  font-size: var(--title-font-size);
+  text-align: center;
+}
+h2 {
+  color: var(--title-color);
+  font-size: var(--second-font-size);
+}
+
+h3 {
+  color: var(--title-color);
+  font-size: var(--third-font-size);
+}
+h4 {
+  font-weight: 600;
+  line-height: 2rem;
+  font-size: var(--text-font-size);
+}
+span {
+  color: var(--hight-light-color);
+  font-weight: 700;
+}
+
+p,
+th,
+td {
+  font-weight: 400;
+  line-height: 2.2rem;
+  font-size: var(--text-font-size);
+  color: var(--text-color);
+}
+th {
+  font-weight: 900;
+}
+
+button {
+  width: 100%;
+  padding: 1rem;
+  font-size: var(--third-font-size);
+  border: none;
+  background-color: rgb(0, 0, 0, 0.5);
+  color: white;
+  cursor: pointer;
+}

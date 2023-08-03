@@ -1,146 +1,144 @@
-@use 'sass:math';
+@use "sass:math";
 
 .tnp-section {
-    margin: 40px 15px;
+  margin: 40px 15px;
 
-    // show or hide element on mobile/desktop
+  // show or hide element on mobile/desktop
 
-    .hide-mobile {
-        display: none;
-
-        @include xl {
-            display: block;
-        }
-    }
+  .hide-mobile {
+    display: none;
 
     @include xl {
-        .hide-desktop {
-            display: none;
-        }	
+      display: block;
     }
+  }
+
+  @include xl {
+    .hide-desktop {
+      display: none;
+    }
+  }
+
+  h2 {
+    text-align: center;
+    margin: 0 0 $base-margin 0;
+  }
+
+  h3 {
+    text-align: center;
+    margin: 0;
+  }
+
+  p {
+    margin: $base-margin 0;
+  }
+
+  .ticket-flex {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .ticket-text {
+    padding: ($base-margin * 1.25) $base-padding $base-padding;
+    text-align: center;
+  }
+
+  .ticket-img {
+    margin-bottom: -3px;
+  }
+
+  .ticket-detail,
+  .ticket-img {
+    width: 100%;
+  }
+
+  @include md {
+    margin: ($base-margin * 2.5) ($base-margin * 4);
 
     h2 {
-        text-align: center;
-        margin: 0 0 $base-margin 0;
+      margin-bottom: $base-margin * 1.5;
     }
 
     h3 {
-        text-align: center;
-        margin: 0;
+      font-size: $font-size-xl;
+    }
+  }
+
+  @include xl {
+    h2 {
+      text-align: left;
+      margin-left: 15%;
+    }
+
+    h3 {
+      margin-top: 0.5rem;
     }
 
     p {
-        margin: $base-margin 0;
+      margin: 0 0 1rem;
     }
 
     .ticket-flex {
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
+      width: 100%;
+      margin: 0 auto;
+      max-width: 1098px;
+      height: 350px;
+      flex-direction: row;
     }
 
     .ticket-text {
-        padding: ($base-margin * 1.25) $base-padding $base-padding;
-        text-align: center;
+      width: 54.3%;
+      height: 100%;
+      display: flex;
+      padding: 0 1rem;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+
+    .ticket-detail {
+      height: 100%;
+      width: 4.3%;
     }
 
     .ticket-img {
-        margin-bottom: -3px;
+      height: 100%;
+      width: 41.5%;
+      object-fit: cover;
     }
-    
-    .ticket-detail, .ticket-img {
-        width: 100%;
-    }
-
-    @include md {
-        margin: ($base-margin * 2.5) ($base-margin * 4);
-
-        h2 {
-           margin-bottom: $base-margin * 1.5;
-        }
-
-        h3 {
-            font-size: $font-size-xl;
-        }
-
-    }
-
-    @include xl {
-
-        h2 {
-            text-align: left;
-            margin-left: 15%; 
-        }
-
-        h3 {
-            margin-top: 0.5rem;
-        }
-
-        p {
-            margin: 0 0 1rem;
-        }
-
-        .ticket-flex {
-            width: 100%;
-            margin: 0 auto;
-            max-width: 1098px;
-            height: 350px;
-            flex-direction: row;
-        }
-        
-        .ticket-text {
-            width: 54.3%;
-            height: 100%;
-            display: flex;
-            padding: 0 1rem;
-            flex-direction: column;
-            justify-content: space-around;
-        }
-        
-        .ticket-detail {
-            height: 100%;
-            width: 4.3%;
-        }
-        
-        .ticket-img {
-            height: 100%;
-            width: 41.5%;
-            object-fit: cover;
-        }
-        
-    }
+  }
 }
 
 .alert-section {
-    margin: 0 0.75rem;
-    padding: $base-padding * 1.25;
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: space-between;
-    align-items: center;
+  margin: 0 0.75rem;
+  padding: $base-padding * 1.25;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  align-items: center;
 
-    svg {
+  svg {
     margin-bottom: 0.5rem;
     width: 95px;
 
     @include md {
-        margin: 0 0 0 1rem;
-        width: 15%;
+      margin: 0 0 0 1rem;
+      width: 15%;
     }
-    }
+  }
 
-    @include md {
-        margin: 2.5rem 4rem;
-        flex-direction: row;
-        gap: 0;
+  @include md {
+    margin: 2.5rem 4rem;
+    flex-direction: row;
+    gap: 0;
 
-        div {
-            width: 85%;
-        }
+    div {
+      width: 85%;
     }
+  }
 
-    @include lg {
-        padding: 1rem 4rem;
-    }
+  @include lg {
+    padding: 1rem 4rem;
+  }
 }

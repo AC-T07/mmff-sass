@@ -1,0 +1,644 @@
+@import "./global.css";
+
+:root {
+  /* global colour set up */
+  --primary-color: #484ca0;
+  --secondary-color: #f89b21;
+  --neutral-color: #ffffff;
+  --accent-color: #5a5eaa;
+  --highlight-color: #3e3939;
+  /* Font Families */
+  --heading-font: "Quicksand", sans-serif;
+  --main-font: "Quicksand", sans-serif;
+  /* Other Variables */
+}
+
+/* Global Styles */
+body {
+  font-family: var(--main-font);
+  color: var(--neutral-color);
+  background-color: var(--primary-color);
+  /* reset padding and margin */
+  padding: 0;
+  margin: 0 auto 2em auto;
+  overflow-x: hidden;
+}
+/* styles main and adds buffer between head */
+main {
+  background-color: var(--neutral-color);
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+/* hide some destop  */
+*.hide-on-mobile {
+  display: none;
+}
+
+div.wrapper,
+section.wrapper {
+  display: flex;
+  padding: 0 1em;
+  flex-direction: column;
+  align-items: center;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 200%;
+}
+
+.wrapper {
+  padding: 2em;
+}
+
+.lh-2 {
+  line-height: 200%;
+}
+
+/* set all text in team section to black (not one of our primary colors) */
+.team {
+  color: black;
+}
+
+/* descriptions of team members follows different style than rest of site */
+.team p {
+  margin-block: 1rem;
+  /* width: 50%; */
+  margin-inline: 5%;
+  text-align: center;
+}
+
+/* mission section */
+section.mission {
+  background-color: var(--highlight-color);
+}
+
+/* sets text below the fullwidth image that escapes the container */
+section.mission p {
+  color: var(--light-text);
+  margin-top: 100vw;
+}
+
+.mission section img {
+  max-width: 483px;
+  max-height: auto;
+  aspect-ratio: 1/1;
+}
+
+/* centers main headings */
+
+/* codepen example */
+
+/* margin-bottom: 1125px; */
+
+.pt-0 {
+  margin-top: 0;
+  padding-top: 0;
+}
+.pb-1 {
+  margin-top: 0;
+  padding-top: 1em;
+}
+.pb-0 {
+  padding-bottom: 0;
+}
+
+.text-black {
+  color: black;
+}
+
+/* button icon placeholders */
+.icon-btn {
+  display: flex;
+  flex-direction: column;
+  margin: 1.5em;
+}
+a.icon-btn {
+  width: max-content;
+}
+
+.icon-btn img {
+  width: 4em;
+  align-self: center;
+}
+
+/* styles links */
+a:link,
+a:visited {
+  color: var(--neutral-color);
+  text-decoration: none;
+}
+
+/* links when hovered and active */
+a.currentPage,
+a:hover,
+a:active,
+a.currentPage:hover,
+a.currentPage:active {
+  color: var(--secondary-color);
+  font-weight: normal;
+  text-decoration: underline;
+}
+.bg-dark-gray {
+  background-color: #3e3939;
+}
+
+/* image on call for proposal page image */
+.mission-image {
+  width: 100%;
+}
+/* align text to left for call for proposal mission */
+section.cfpMission > :nth-child(2) {
+  text-align: left;
+}
+section.cfpMission > :nth-child(3),
+section.cfpMission > :nth-child(4),
+section.cfpMission > :nth-child(2) {
+  padding: 1rem 2rem;
+}
+section.cfpMission > :nth-child(3) {
+  padding-bottom: 0;
+}
+
+/* cfp carousel  */
+.carousel-container {
+  width: 100%;
+  height: auto;
+}
+
+.carousel-wrapper {
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  margin: 1em auto 0;
+  padding: 4rem auto;
+  display: flex;
+  overflow-y: hidden;
+}
+.carousel-wrapper h4 {
+  text-decoration: underline;
+  color: var(--primary-color);
+  height: 100%;
+  background-color: var(--neutral-color);
+  grid-row: 2;
+  margin-top: 1em;
+}
+.blackBoxes div {
+  width: 100%;
+  background-color: black;
+  height: 300px;
+  position: absolute;
+  left: 10px;
+}
+
+.rules-guidelines-section {
+  background-color: var(--primary-color);
+}
+
+div.rules-guidelines-section ul li {
+  list-style-type: "-  ";
+}
+
+.color-tertiary {
+  color: #3e3939;
+}
+.carousel-item {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, auto);
+  width: 300px;
+  padding: 10px;
+  scroll-snap-align: start;
+}
+
+.carousel-item img {
+  border: 8px solid white;
+  grid-row: 1;
+}
+/* carousel on CFP page */
+div.carousel-item2 {
+  background-color: #3e3939;
+  display: flex;
+  flex-direction: column;
+}
+div.carousel-item2 img {
+  order: -1;
+}
+div.carousel-item2 h4 {
+  background-color: unset;
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-size: 1.5em;
+}
+div.carousel-item2 section {
+  width: fit-content;
+}
+
+/* application details */
+.app-details {
+  background-color: #d9d9d9;
+  color: black;
+  text-align: left;
+}
+.app-details h3 {
+  color: var(--primary-color);
+}
+
+.app-details ul li {
+  list-style-type: "-  ";
+}
+
+/* class to change all text to secondary */
+.secondary-color {
+  color: var(--secondary-color);
+}
+a.currentPage:hover {
+  color: var(--highlight-color);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* colour classes for text */
+.text-primary {
+  color: var(--primary-color);
+}
+.text-secondary {
+  color: var(--secondary-color);
+}
+.text-neutral {
+  color: var(--neutral-color);
+}
+.text-accent {
+  color: var(--accent-color);
+}
+.text-highlight {
+  color: var(--highlight-color);
+}
+/* elements with this class will have their border radius set globally */
+.border-radius {
+  border-radius: 1em;
+}
+
+div.fundersAndSponsors {
+  background-color: var(--accent-color);
+  padding: 1em;
+  border-radius: 50px;
+  margin: 1em;
+  margin-top: 0;
+  color: var(--secondary-color);
+}
+
+.funders-sponsors-gallery div {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1em;
+}
+
+div.fundersAndSponsors {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+div.funders-grid {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+div.funders-last-images {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  grid-gap: 10px;
+}
+
+.getInMainContainer section:nth-of-type(odd) {
+  background-color: #f7f7f7;
+  margin: 2em;
+  color: black;
+  padding: 1em;
+}
+.getInMainContainer section:nth-of-type(odd) a {
+  color: var(--secondary-color);
+}
+.getInMainContainer section:nth-of-type(odd) h4 {
+  color: var(--primary-color);
+}
+.getInMainContainer section:nth-of-type(even) {
+  background-color: var(--primary-color);
+  padding: 1em 2.5em;
+}
+.getInMainContainer section:nth-of-type(even) a {
+  color: var(--secondary-color);
+}
+.getInMainContainer section:nth-of-type(even) h4 {
+  color: var(--secondary-color);
+}
+
+/* nav menu button styling */
+.btn-head {
+  text-align: center;
+}
+
+.team section img {
+  border: 2px solid black;
+  padding: 0.75em 1em;
+}
+
+/* styles the menu on mobile */
+body > header > nav > div {
+  width: auto;
+  padding: 1em 5em;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 46%);
+  text-align: center;
+}
+
+/* hides checkbox */
+input#nav-toggle {
+  display: none;
+}
+/* hides dropdown content until ready */
+.dropdown-content {
+  display: none;
+}
+/* adds pointer to label */
+header label {
+  cursor: pointer;
+}
+
+/* creates the squar section on mobile for header */
+header div:nth-child(2) {
+  height: 390px;
+  max-height: 767px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* escapes the container to provide full sized image on mobile */
+.escapeContainer {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+
+/* nav menu */
+#nav-toggle:checked + .dropdown-content {
+  display: block;
+  width: auto;
+  margin: 0 auto;
+  margin-top: 1em;
+  text-align: left;
+  border: 2px solid var(--neutral-color);
+}
+/* ---------------------------------------------------- */
+
+iframe {
+  width: 100vw;
+  height: 900px;
+  max-height: max-content;
+  border: none;
+  margin-bottom: 1em;
+  padding: 0;
+}
+
+/* set up footer grids on mobile */
+footer {
+  display: grid;
+  grid-template-columns: 3fr 2fr 2fr;
+  grid-template-rows: auto 1fr auto;
+  margin: 0 auto;
+  justify-content: left;
+  align-items: start;
+  justify-items: start;
+  padding: 1em;
+}
+body > footer > span > a.icon-btn {
+  color: white;
+}
+
+footer ul {
+  list-style-type: none;
+  padding-left: 0;
+  line-height: 200%;
+}
+
+footer span {
+  display: flex;
+  justify-content: space-between;
+  transform: scale(0.6);
+  width: 100%;
+  justify-content: center;
+}
+div.footerLogo > * {
+  margin: 0.5em auto;
+}
+
+footer h3,
+footer h4 {
+  width: max-content;
+}
+footer a:active,
+footer a:visited,
+footer p {
+  color: #b8baf0;
+}
+/* call to action styling */
+.btn-cta.btn-active,
+footer a.btn-cta:visited {
+  background-color: var(--secondary-color);
+  border-radius: 50px;
+  padding: 0.75em 2em;
+  color: white;
+}
+/* social styling */
+i.fab {
+  font-size: 2em;
+}
+footer > :last-child {
+  grid-column: 1 / span 3;
+  grid-row: 3;
+  margin: 0 auto;
+}
+
+/* get involved */
+footer > :nth-child(2) {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+footer > :nth-child(3) {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+/* contact us */
+footer > :nth-child(5) {
+  grid-column: 1 / span 3;
+  grid-row: 2;
+  align-items: center;
+}
+
+/* socials */
+footer > :nth-child(4) {
+  grid-column: 3;
+  grid-row: 1;
+}
+#logoFooter {
+  margin: 1.25em auto;
+  width: 10em;
+  height: auto;
+}
+@media screen and (min-width: 768px) {
+  main > * {
+    margin-inline: 2rem;
+  }
+  /* Desktop media query */
+
+  .hide-on-mobile {
+    display: initial;
+  }
+  .hide-on-desktop {
+    display: none;
+  }
+  section.mission p {
+    margin-top: 0;
+  }
+  section.mission img {
+    position: initial;
+  }
+  section.mission div.float {
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: auto auto auto;
+  }
+  /* positions the h3 for mission section */
+  section.mission div.float > :nth-child(1) {
+    grid-column: 2;
+    grid-row: 1;
+    text-align: left;
+    justify-content: flex-end;
+    padding-bottom: 0;
+  }
+  /* positions the picture for mission  */
+  section.mission div.float > :nth-child(2) {
+    grid-column: 1;
+    grid-row: 1 / span 4;
+    padding: 2em;
+    box-sizing: border-box;
+  }
+  /* positions the text for mission  */
+  section.mission div.float > :nth-child(3) {
+    grid-column: 2;
+    color: var(--light-text);
+    grid-row: 2 / span 3;
+
+    /* line-height: 300%; */
+    padding-left: 1em;
+    align-self: flex-start;
+  }
+  /* positions the button for mission  */
+  section.mission div.float > :nth-child(4) {
+    grid-column: 3;
+    grid-row: 4;
+    justify-self: flex-end;
+    align-self: flex-end;
+  }
+}
+
+footer.footer-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; /* Center the text within the footer */
+}
+
+footer ul.footer-flex {
+  display: flex;
+  flex-direction: column; /* Change the direction to vertical */
+  align-items: center; /* Center the list items horizontally */
+  list-style: none; /* Remove default list styles */
+  padding: 0;
+  margin: 0;
+}
+
+footer ul.footer-flex li {
+  margin: 10px 0; /* Add vertical spacing between list items */
+}
+
+footer a {
+  margin: 0;
+  padding: 0;
+}
+/* -----------test----------------- */
+
+.swiper-container {
+  height: 100rem;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  height: 90rem;
+  width: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em;
+  background-color: white;
+}
+@media only screen and (width > 568px) {
+  .swiper-slide {
+    width: 50%;
+  }
+}
+@media only screen and (width > 768px) {
+  .swiper-slide {
+    width: 45%;
+  }
+}
+@media only screen and (width > 1024px) {
+  .swiper-slide {
+    width: 25%;
+  }
+}
+
+.swiper-slide img {
+  border: 0.5em solid white;
+  filter: drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.3));
+}
+
+body {
+  background: gray;
+}
+.swiper-container {
+  width: 750px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.swiper-slide {
+  width: min-content;
+  padding: 2em;
+  background: white;
+}
+.swiper-slide img {
+  border: 0.5em solid white;
+  filter: drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.3));
+}

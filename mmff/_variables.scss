@@ -1,23 +1,25 @@
 // colours
 $main: #484ca0;
-$lighter-main: #5A5EAA;
+$lighter-main: #5a5eaa;
 $primary: #f89b21;
+$secondary: #cbe0ea;
 $secondary: #dcebf1;
 $theme-white: #f2f2f2;
-$theme-black: #3E3939;
+$theme-black: #3e3939;
+$highlight: #d8e990;
+$theme-black: #3e3939;
 $highlight: #d8e990;
 
 // color palette
 $colors: (
-    "main": $main,
-    "lighter-main": $lighter-main,
-    "primary": $primary,
-    "secondary": $secondary,
-    "theme-white": $theme-white,
-    "theme-black": $theme-black,
-    "highlight": $highlight,
-    "black": black,
-    "white": white,
+  "main": $main,
+  "primary": $primary,
+  "secondary": $secondary,
+  "theme-white": $theme-white,
+  "theme-black": $theme-black,
+  "highlight": $highlight,
+  "black": black,
+  "white": white,
 );
 
 // spacing
@@ -33,6 +35,15 @@ $base-box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
 
 // font sizes
 $base-font-size: 20px;
+$font-size-xs: $base-font-size * 0.6;
+$font-size-sm: $base-font-size * 0.8;
+$font-size-lg: $base-font-size * 1.2;
+$font-size-xl: $base-font-size * 1.8;
+$font-size-2xl: $base-font-size * 2;
+$font-size-3xl: $base-font-size * 2.4;
+$font-size-4xl: $base-font-size * 3.2;
+$font-size-5xl: $base-font-size * 4.2;
+
 $font-size-xs: $base-font-size * 0.6;
 $font-size-sm: $base-font-size * 0.8;
 $font-size-lg: $base-font-size * 1.2;

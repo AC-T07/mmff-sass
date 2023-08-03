@@ -1,24 +1,40 @@
 // variables and functions
-@import 'functions';
-@import 'variables';
+@import "functions";
+@import "variables";
 
 // base & layout
-@import 'base';
-@import 'breakpoints';
-@import 'grid';
+@import "base";
+@import "breakpoints";
+@import "grid";
+
 
 // colors & font-sizes
-@import 'colors';
-@import 'font-style';
+@import "colors";
+@import "font-style";
+
+// components (buttons, cards, navbar)
+@import "components/card";
+@import "components/button";
+@import "components/navigation";
 
 // components (buttons, cards, navbar, header, footer)
-@import 'components/card';
-@import 'components/button';
-@import 'components/ticket';
-@import 'components/header';
-@import 'components/navigation';
-@import 'components/footer';
-@import 'components/contact';
+@import "components/card";
+@import "components/button";
+@import "components/ticket";
+@import "components/header";
+@import "components/navigation";
+@import "components/footer";
+@import "components/contact";
+@import "components/alternating-sections";
+@import "components/events";
+@import "components/call-for-proposal";
+@import "components/get-involved";
+@import "components/about";
+@import "components/submission";
+@import "components/schedule";
+@import "components/press";
+@import "components/awards";
+@import "components/archive";
 
 // pages
 @import 'pages/home';
@@ -26,6 +42,4 @@
 
 
 // utilities (margin, padding, opacity)
-@import 'utilities';
-
-
+@import "utilities";
