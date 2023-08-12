@@ -1,17 +1,24 @@
 {
   "name": "mmff-sass",
   "version": "1.0.0",
+  "source": [
+    "home.html",
+    "**/*.{css,html,js}"
+  ],
   "description": "Sass files for Mirror Mountain Project",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "gulp": "gulp"
+    "gulp": "gulp",
+    "start": "parcel home.html",
+    "build": "parcel build"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-sass": "^5.1.0",
+    "parcel": "^2.9.3",
     "sass": "^1.63.6"
   }
 }
